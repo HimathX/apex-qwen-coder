@@ -1,0 +1,16 @@
+{
+  "space": "himath-nimpura/Apex-Qwen-Coder",
+  "previous_commit": "ff6474846d7b9146425948841a73fd1fd1499356",
+  "commit": "6ab3b902fe28e5644110a852731aa691030d28c9",
+  "files": [
+    "app.py",
+    "runtime.py"
+  ],
+  "weights_changed": false,
+  "visibility_changed": false,
+  "hardware_changed": false,
+  "code_sha256": {
+    "app.py": "d8cc277267ae0e326e0536831bce667321cd8add195ae23cdcbe202b9dfb4e4a",
+    "runtime.py": "0673ceaf3201bc7c4384b49965f4117893c3816e3b64a61170fd445b8486875d"
+  }
+}

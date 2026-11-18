@@ -1,0 +1,49 @@
+{
+  "started_at_utc": "20261118T035731Z",
+  "status": "passed",
+  "hardware_or_files_changed": false,
+  "space": {
+    "id": "himath-nimpura/Apex-Qwen-Coder",
+    "private": true,
+    "commit": "6ab3b902fe28e5644110a852731aa691030d28c9",
+    "stage": "RUNNING",
+    "hardware": "zero-a10g"
+  },
+  "remote_manifest_matches_final_model": true,
+  "remote_weight_sha256": "fb723545c82745a0a34f3ce1bf2103cac563fc97d706ddaa4134f52ba5499c5a",
+  "app_model_ready": true,
+  "tests": {
+    "mcq": {
+      "question": "Which Unity component applies forces and controls a GameObject's physics-based movement?",
+      "expected_choice": "B",
+      "choice": "B",
+      "answer": "Rigidbody",
+      "details": {
+        "prompt_tokens": 95,
+        "generated_tokens": 3,
+        "token_budget_reached": false,
+        "seconds": 0.889,
+        "raw_response": "Answer:b",
+        "valid_answer": true
+      },
+      "passed": true,
+      "wall_seconds": 9.11
+    },
+    "qa": {
+      "question": "What value is assigned to moveSpeed in the supplied code?",
+      "context": "public class PlayerMover : MonoBehaviour { public float moveSpeed = 6f; }",
+      "answer": "In the provided code, the `moveSpeed` variable in the `PlayerMover` class is assigned a value of 6.0.",
+      "details": {
+        "prompt_tokens": 153,
+        "generated_tokens": 30,
+        "token_budget_reached": false,
+        "seconds": 2.284,
+        "mcq_style_response": false
+      },
+      "expected_context_value_found": true,
+      "passed": true,
+      "wall_seconds": 4.77
+    }
+  },
+  "scope": "Two live inference smoke tests, not a rerun of 269-question accuracy or a QA accuracy benchmark."
+}

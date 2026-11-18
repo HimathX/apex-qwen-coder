@@ -1,0 +1,34 @@
+# Model weights (published separately; see README)
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+
+# Archives and uploaded bundles
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Hugging Face caches and symlink trees
+.cache/
+hub-cache/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.pytest_cache/
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

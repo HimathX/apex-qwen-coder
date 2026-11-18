@@ -1,0 +1,39 @@
+===== Application Startup at 2026-11-18 03:54:35 =====
+
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 26.1.2 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+
+tokenizer_config.json:   0%|          | 0.00/7.30k [00:00<?, ?B/s][Atokenizer_config.json: 100%|ââââââââââ| 7.30k/7.30k [00:00<00:00, 31.9MB/s]
+
+vocab.json:   0%|          | 0.00/2.78M [00:00<?, ?B/s][Avocab.json: 100%|ââââââââââ| 2.78M/2.78M [00:00<00:00, 20.5MB/s]
+
+merges.txt:   0%|          | 0.00/1.67M [00:00<?, ?B/s][Amerges.txt: 100%|ââââââââââ| 1.67M/1.67M [00:00<00:00, 20.4MB/s]
+
+tokenizer.json:   0%|          | 0.00/7.03M [00:00<?, ?B/s][Atokenizer.json: 100%|ââââââââââ| 7.03M/7.03M [00:00<00:00, 23.3MB/s]
+
+config.json:   0%|          | 0.00/663 [00:00<?, ?B/s][Aconfig.json: 100%|ââââââââââ| 663/663 [00:00<00:00, 7.30MB/s]
+
+model.safetensors.index.json:   0%|          | 0.00/27.8k [00:00<?, ?B/s][Amodel.safetensors.index.json: 100%|ââââââââââ| 27.8k/27.8k [00:00<00:00, 123MB/s]
+
+model-00001-of-00004.safetensors:   0%|          | 0.00/4.88G [00:00<?, ?B/s][A
+model-00001-of-00004.safetensors:   2%|â         | 111M/4.88G [00:01<01:04, 73.4MB/s][A
+model-00001-of-00004.safetensors:  10%|â         | 507M/4.88G [00:02<00:21, 205MB/s] [A
+model-00001-of-00004.safetensors:  19%|ââ        | 908M/4.88G [00:04<00:16, 235MB/s][A
+model-00001-of-00004.safetensors:  29%|âââ       | 1.42G/4.88G [00:06<00:14, 232MB/s][A
+model-00001-of-00004.safetensors:  51%|âââââ     | 2.49G/4.88G [00:08<00:06, 368MB/s][Amodel-00001-of-00004.safetensors: 100%|ââââââââââ| 4.88G/4.88G [00:09<00:00, 542MB/s]
+
+model-00002-of-00004.safetensors:   0%|          | 0.00/4.93G [00:00<?, ?B/s][A
+model-00002-of-00004.safetensors:   6%|â         | 298M/4.93G [00:01<00:27, 170MB/s][A
+model-00002-of-00004.safetensors:  45%|âââââ     | 2.24G/4.93G [00:03<00:03, 868MB/s][Amodel-00002-of-00004.safetensors: 100%|ââââââââââ| 4.93G/4.93G [00:03<00:00, 1.26GB/s]
+
+model-00003-of-00004.safetensors:   0%|          | 0.00/4.33G [00:00<?, ?B/s][A
+model-00003-of-00004.safetensors:  14%|ââ        | 602M/4.33G [00:01<00:06, 598MB/s][A
+model-00003-of-00004.safetensors:  40%|ââââ      | 1.74G/4.33G [00:02<00:03, 796MB/s][A
+model-00003-of-00004.safetensors:  91%|âââââââââ | 3.95G/4.33G [00:03<00:00, 1.39GB/s][Amodel-00003-of-00004.safetensors: 100%|ââââââââââ| 4.33G/4.33G [00:03<00:00, 1.30GB/s]
+
+model-00004-of-00004.safetensors:   0%|          | 0.00/1.09G [00:00<?, ?B/s][A
+model-00004-of-00004.safetensors:  14%|ââ        | 155M/1.09G [00:01<00:06, 154MB/s][Amodel-00004-of-00004.safetensors: 100%|ââââââââââ| 1.09G/1.09G [00:01<00:00, 641MB/s]
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s][A

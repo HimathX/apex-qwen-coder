@@ -1,0 +1,25 @@
+{
+  "started_at_utc": "20261118T035042Z",
+  "status": "failed",
+  "hardware_or_files_changed": false,
+  "space": {
+    "id": "himath-nimpura/Apex-Qwen-Coder",
+    "private": true,
+    "commit": "ff6474846d7b9146425948841a73fd1fd1499356",
+    "stage": "RUNNING",
+    "hardware": "zero-a10g"
+  },
+  "remote_manifest_matches_final_model": true,
+  "remote_weight_sha256": "fb723545c82745a0a34f3ce1bf2103cac563fc97d706ddaa4134f52ba5499c5a",
+  "tests": {
+    "mcq": {
+      "passed": false,
+      "error": "AppError: RuntimeError"
+    },
+    "qa": {
+      "passed": false,
+      "error": "AppError: RuntimeError"
+    }
+  },
+  "scope": "Two live inference smoke tests, not a rerun of 269-question accuracy or a QA accuracy benchmark."
+}

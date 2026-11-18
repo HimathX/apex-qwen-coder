@@ -1,0 +1,16 @@
+{
+  "space": "himath-nimpura/Apex-Qwen-Coder",
+  "commit": "6ab3b902fe28e5644110a852731aa691030d28c9",
+  "question": "What does Time.deltaTime represent in Unity C#?",
+  "context": "",
+  "answer": "Time.deltaTime represents the time in seconds it took to complete the last frame. It is used to make your game logic independent of the frame rate, ensuring smooth movement and consistent gameplay experience across different devices.",
+  "details": {
+    "prompt_tokens": 124,
+    "generated_tokens": 41,
+    "token_budget_reached": false,
+    "seconds": 2.163,
+    "mcq_style_response": false
+  },
+  "wall_seconds": 8.86,
+  "answered_without_options_or_context": true
+}

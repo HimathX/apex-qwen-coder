@@ -1,0 +1,2423 @@
+[
+  {
+    "class": "BeastAttack.cs",
+    "Question": "What does the BeastAttack class do in the Unity project?",
+    "a": "Manages player movement",
+    "b": "Generates sounds",
+    "c": "Manages the beast attack behavior and player hit behavior",
+    "d": "Controls the camera",
+    "Answer": "c"
+  },
+  {
+    "class": "BeastAttack.cs",
+    "Question": "What does the gameObject that uses the BeastAttack.cs script need to have on it?",
+    "a": "A Rigidbody",
+    "b": "A Collider",
+    "c": "A Cinemachine Impulse Source",
+    "d": "All of the above",
+    "Answer": "d"
+  },
+  {
+    "class": "BeastAttack.cs",
+    "Question": "What happens when the player gets hit while in the beast's Escaping state?",
+    "a": "The player is pushed back",
+    "b": "The player is pushed back and the beast enters a cooldown state",
+    "c": "The player is pushed back and the beast dies",
+    "d": "The player is not affected",
+    "Answer": "b"
+  },
+  {
+    "class": "BeastKillsPlayerSequenceAnimator.cs",
+    "Question": "What is the purpose of the BeastKillsPlayerSequenceAnimator class?",
+    "a": "To control player movement",
+    "b": "To manage the beast killing player animation sequence",
+    "c": "To handle player combat actions",
+    "d": "To store references to key player components",
+    "Answer": "b"
+  },
+  {
+    "class": "BeastKillsPlayerSequenceAnimator.cs",
+    "Question": "In the BeastKillsPlayerSequenceAnimator class, what does the StartSequence method do?",
+    "a": "Finds the farthest destination from the player",
+    "b": "Activates and plays the animation sequence",
+    "c": "Returns a random destination",
+    "d": "Sets the player position",
+    "Answer": "b"
+  },
+  {
+    "class": "BeastKillsPlayerSequenceAnimator.cs",
+    "Question": "What does the OnRespawnClicked method do in the BeastKillsPlayerSequenceAnimator class?",
+    "a": "Deactivates the animation sequence",
+    "b": "Teleports the player",
+    "c": "Sets the player position",
+    "d": "Finds the farthest destination from the player",
+    "Answer": "a"
+  },
+  {
+    "class": "Beast.BeastManager.cs",
+    "Question": "What states can the beast be in, according to the State enum?",
+    "a": "Sleep, On Target, Roaming, Escaping, and Bleeding",
+    "b": "Sleep, On Target, Roaming, Escaping, and Killing",
+    "c": "Sleep, On Target, Roaming, Escaping, and Attacking",
+    "d": "Sleep, On Target, Roaming, Escaping, and Stunned",
+    "Answer": "b"
+  },
+  {
+    "class": "Beast.BeastManager.cs",
+    "Question": "What happens when the lights are back on? (event LevelEventHub.OnLightsBackOn)",
+    "a": "The beast changes to state Sleep.",
+    "b": "The beast changes to state Killing.",
+    "c": "The beast changes to state Escaping.",
+    "d": "The beast changes to state Roaming.",
+    "Answer": "c"
+  },
+  {
+    "class": "Beast.BeastManager.cs",
+    "Question": "What is the purpose of the _scapingState variable?",
+    "a": "To control the beast's movement when it is escaping.",
+    "b": "To control the beast's movement when it is sleeping.",
+    "c": "To control the beast's movement when it is roaming.",
+    "d": "To control the beast's movement when it is on target.",
+    "Answer": "a"
+  },
+  {
+    "class": "BeastState.cs",
+    "Question": "What is the purpose of the BeastState abstract class in Unity's Beast.States namespace? ",
+    "a": "To control player movement",
+    "b": "To manage some player behavior functionality",
+    "c": "To handle player combat actions",
+    "d": "To store references to key player components",
+    "Answer": "d"
+  },
+  {
+    "class": "BeastState.cs",
+    "Question": "In the BeastState class, what is the purpose of the LookAt() method? ",
+    "a": "To shoot a laser beam in a direction",
+    "b": "To slowly turn the head to face a target position",
+    "c": "To change the rotation of the entire beast to point it at a position",
+    "d": "To fire a projectile at a target",
+    "Answer": "b"
+  },
+  {
+    "class": "BeastState.cs",
+    "Question": "Which method in the BeastState class is responsible for setting up the state's properties and injecting its required parameters? ",
+    "a": "Init()",
+    "b": "Activate()",
+    "c": "EnterState()",
+    "d": "Start()",
+    "Answer": "a"
+  },
+  {
+    "class": "BeastStateKilling.cs",
+    "Question": "In the BeastStateKilling class, what is the purpose of the _timeLeft field?",
+    "a": "To store the time since the player was killed",
+    "b": "To store the time left until the beast starts attacking",
+    "c": "To store the time left before the beast changes state",
+    "d": "To store the time left until the beast kills the player",
+    "Answer": "c"
+  },
+  {
+    "class": "BeastStateKilling.cs",
+    "Question": "What does the Update() method do in the BeastStateKilling class?",
+    "a": "Hides the beast from the player",
+    "b": "Makes the beast look at the player and transition to roaming state after a certain time",
+    "c": "Makes the beast attack the player",
+    "d": "Makes the beast chase the player",
+    "Answer": "b"
+  },
+  {
+    "class": "BeastStateKilling.cs",
+    "Question": "What happens when the BeastStateKilling state is activated?",
+    "a": "The beast becomes invisible",
+    "b": "The beast's movement speed is set to normal",
+    "c": "The beast's attack cooldown is reset",
+    "d": "The beast's navigation path is reset",
+    "Answer": "d"
+  },
+  {
+    "class": "BeastStateOnTarget.cs",
+    "Question": "What is the purpose of the 'eyeSightDistance' field in BeastStateOnTarget.cs?",
+    "a": "It stops other beasts from getting in the player's way.",
+    "b": "It sets the player's fast speed.",
+    "c": "It defines how far the beast can see.",
+    "d": "It determines the player's normal speed.",
+    "Answer": "c"
+  },
+  {
+    "class": "BeastStateOnTarget.cs",
+    "Question": "What will happen if the player is not in the beast's line of sight in BeastStateOnTarget.cs?",
+    "a": "The beast will charge at the player.",
+    "b": "The beast will continue chasing the player.",
+    "c": "The beast will transition to RoamingOnSight state.",
+    "d": "The beast will transition to Roaming state.",
+    "Answer": "d"
+  },
+  {
+    "class": "BeastStateOnTarget.cs",
+    "Question": "When does the beast start running toward the player in BeastStateOnTarget.cs?",
+    "a": "When the player is within a certain distance.",
+    "b": "When the beast is on cooldown.",
+    "c": "When the beast is in RoamingOnSight state.",
+    "d": "When the player is not in the beast's line of sight.",
+    "Answer": "a"
+  },
+  {
+    "class": "BeastStateRoaming.cs",
+    "Question": "In BeastStateRoaming.cs, what is the purpose of the `CheckForPlayerInSight()` method?",
+    "a": "To check if the player is in the beast's line of sight.",
+    "b": "To check if the player is making sound.",
+    "c": "To update the beast's current roaming position.",
+    "d": "To change the beast's state to OnTarget.",
+    "Answer": "a"
+  },
+  {
+    "class": "BeastStateRoaming.cs",
+    "Question": "In BeastStateRoaming.cs, what happens when the beast reaches its current roaming point?",
+    "a": "It will stay at the point and wait for the player.",
+    "b": "It will teleport to a new roaming point.",
+    "c": "It will get a new roaming point and start moving towards it.",
+    "d": "It will change its state to OnTarget.",
+    "Answer": "c"
+  },
+  {
+    "class": "BeastStateRoaming.cs",
+    "Question": "In BeastStateRoaming.cs, what does the beast do when it hears the player making sound?",
+    "a": "It will change its state to OnTarget.",
+    "b": "It will ignore the sound and continue roaming.",
+    "c": "It will roam to the player's last heard position.",
+    "d": "It will increase the detection angle.",
+    "Answer": "c"
+  },
+  {
+    "class": "BeastStateScaping.cs",
+    "Question": "In BeastStateScaping.cs, what is the purpose of the Update() method?",
+    "a": "To check if the beast has reached its hiding place",
+    "b": "To change the beast's state",
+    "c": "To make the beast look at the player",
+    "d": "To set the beast's destination",
+    "Answer": "a"
+  },
+  {
+    "class": "BeastStateScaping.cs",
+    "Question": "In BeastStateScaping.cs, when does the beast change to the Sleep state?",
+    "a": "When the beast reaches its hideout",
+    "b": "When the player brings the power back on",
+    "c": "When the beast is out",
+    "d": "When the player turns off the power",
+    "Answer": "a"
+  },
+  {
+    "class": "BeastStateScaping.cs",
+    "Question": "In BeastStateScaping.cs, what happens when the OnStateActivated() method is called?",
+    "a": "The beast's destination is set to its hideout position",
+    "b": "The beast's speed is set to normal",
+    "c": "The beast's state is changed to Sleep",
+    "d": "The beast is teleported to its hideout",
+    "Answer": "a"
+  },
+  {
+    "class": "BeastStateSleep.cs",
+    "Question": "Within the BeastStateSleep class, what is the purpose of the OnStateActivated method?",
+    "a": "To enable the NavMeshAgent component.",
+    "b": "To move the beast to its hideout position.",
+    "c": "To set the beast's speed.",
+    "d": "To deactivate the beast's gameObject.",
+    "Answer": "b"
+  },
+  {
+    "class": "BeastStateSleep.cs",
+    "Question": "What is the main responsibility of the BeastStateSleep class?",
+    "a": "To control the beast's movement.",
+    "b": "To manage the beast's attacks.",
+    "c": "To handle the beast's sleep state.",
+    "d": "To detect when the player is near the beast.",
+    "Answer": "c"
+  },
+  {
+    "class": "BeastStateSleep.cs",
+    "Question": "Which of the following methods is defined in the BeastStateSleep class to handle the beast's behavior when it is activated?",
+    "a": "OnStateDeactivated",
+    "b": "Update",
+    "c": "OnStateActivated",
+    "d": "Awake",
+    "Answer": "c"
+  },
+  {
+    "class": "GlobalEventHub.cs",
+    "Question": "What is the purpose of GlobalEventHub class?",
+    "a": "To manage game objects",
+    "b": "To allow communication between components without having to reference each other",
+    "c": "To handle player input",
+    "d": "To store game data",
+    "Answer": "b"
+  },
+  {
+    "class": "GlobalEventHub.cs",
+    "Question": "What is the OnGameStart event for?",
+    "a": "This event is called at the start of the game",
+    "b": "This event is called when the player scores points",
+    "c": "This event is called when the player dies",
+    "d": "This event is called when the player wins the game",
+    "Answer": "a"
+  },
+  {
+    "class": "GlobalEventHub.cs",
+    "Question": "How do components subscribe to the OnGameStart event?",
+    "a": "They add a method to the OnGameStart event delegate",
+    "b": "They call the GameStart() method",
+    "c": "They add a listener to the OnGameStart event",
+    "d": "They set the OnGameStart event to true",
+    "Answer": "a"
+  },
+  {
+    "class": "LevelEventHub.cs",
+    "Question": "What is the purpose of the LevelEventHub class in LevelEventHub.cs?",
+    "a": "To control player movement",
+    "b": "To manage some player behavior functionality",
+    "c": "To handle player combat actions",
+    "d": "To provide a way for components to communicate with each other without referencing each other",
+    "Answer": "d"
+  },
+  {
+    "class": "LevelEventHub.cs",
+    "Question": "What does the OnPowerCoreInserted method do in LevelEventHub.cs?",
+    "a": "Finds the farthest destination from the player",
+    "b": "Teleports the player",
+    "c": "Returns a random destination",
+    "d": "Raises an event when a power core has been inserted into a power station",
+    "Answer": "d"
+  },
+  {
+    "class": "LevelEventHub.cs",
+    "Question": "What does the OnLightGunLightInjected method do in LevelEventHub.cs?",
+    "a": "Finds the farthest destination from the player",
+    "b": "Teleports the player",
+    "c": "Returns a random destination",
+    "d": "Raises an event when a new light has been injected into a light gun object",
+    "Answer": "d"
+  },
+  {
+    "class": "PlayerBehaviourEventHub.cs",
+    "Question": "What is the purpose of PlayerBehaviourEventHub?",
+    "a": "To manage player movement",
+    "b": "To communicate between different components",
+    "c": "To handle player combat actions",
+    "d": "To store references to key player components",
+    "Answer": "b"
+  },
+  {
+    "class": "PlayerBehaviourEventHub.cs",
+    "Question": "What event is triggered when the player fully grabs an object?",
+    "a": "OnPlayerGotHit",
+    "b": "OnPlayerGrabbedAnObject",
+    "c": "OnPlayerHealthEnded",
+    "d": "OnPlayerUnGrabbedAnObject",
+    "Answer": "b"
+  },
+  {
+    "class": "PlayerBehaviourEventHub.cs",
+    "Question": "Which component invokes PlayerRespawned?",
+    "a": "GrabbableObjects.cs",
+    "b": "PlayerHealthManager.cs",
+    "c": "BeastAttack.cs",
+    "d": "DeathRespawnManager.cs",
+    "Answer": "d"
+  },
+  {
+    "class": "UiEventHub.cs",
+    "Question": "What is the purpose of the UiEventHub class?",
+    "a": "To handle player movement",
+    "b": "To allow communication between components without having to reference each other",
+    "c": "To manage some player behavior functionality",
+    "d": "To store references to key player components",
+    "Answer": "b"
+  },
+  {
+    "class": "UiEventHub.cs",
+    "Question": "What does the MainHint() method do in UiEventHub.cs?",
+    "a": "Updates the current objective of the game",
+    "b": "Triggers the 'OnMainHint' event",
+    "c": "Returns a random destination",
+    "d": "Sets the player position",
+    "Answer": "b"
+  },
+  {
+    "class": "UiEventHub.cs",
+    "Question": "Which event is used to update the current objective of the game?",
+    "a": "OnMainHint",
+    "b": "OnCurrentObjectiveUpdate",
+    "c": "OnPlayerLookAtInteractable",
+    "d": "OnPowerSwitchUpdate",
+    "Answer": "b"
+  },
+  {
+    "class": "FallenToVoidObjectDestroyer.cs",
+    "Question": "In FallenToVoidObjectDestroyer.cs, what is the purpose of the class?",
+    "a": "To remove any object that enters the void",
+    "b": "To teleport objects to another location",
+    "c": "To track the player's position",
+    "d": "To set the player's position",
+    "Answer": "a"
+  },
+  {
+    "class": "FallenToVoidObjectDestroyer.cs",
+    "Question": "In the FallenToVoidObjectDestroyer.cs, what happens when an object enters the \"void\"?",
+    "a": "It is transported to a random location",
+    "b": "Its position is reset",
+    "c": "It is destroyed",
+    "d": "It is teleported to the player",
+    "Answer": "c"
+  },
+  {
+    "class": "FallenToVoidObjectDestroyer.cs",
+    "Question": "Which method is responsible for removing an object that falls into the void?",
+    "a": "OnTriggerEnter()",
+    "b": "Update()",
+    "c": "Start()",
+    "d": "Awake()",
+    "Answer": "a"
+  },
+  {
+    "class": "PlayerDetector.cs",
+    "Question": "What does the 'ShoutOnTrigger' field in the PlayerDetector class control?",
+    "a": "Whether to destroy the object on trigger",
+    "b": "Whether to broadcast an event globally and in the inspector",
+    "c": "Whether to call other functions on the object",
+    "d": "Whether to add the object to a list of detected objects",
+    "Answer": "b"
+  },
+  {
+    "class": "PlayerDetector.cs",
+    "Question": "What happens when the PlayerDetector's OnTriggerEnter method is called?",
+    "a": "It destroys the object",
+    "b": "It broadcasts a global event and invokes a UnityEvent",
+    "c": "It teleports the player to a specific location",
+    "d": "It saves the object's position",
+    "Answer": "b"
+  },
+  {
+    "class": "PlayerDetector.cs",
+    "Question": "What is the purpose of the PlayerDetector class? ",
+    "a": "To detect when an object enters its trigger zone",
+    "b": "To manage the player's health",
+    "c": "To control the player's movement",
+    "d": "To store the player's inventory",
+    "Answer": "a"
+  },
+  {
+    "class": "SimpleLight.cs",
+    "Question": "What is the purpose of the SimpleLight class?",
+    "a": "To control the intensity of lights.",
+    "b": "To manage the range of lights.",
+    "c": "To toggle lights on and off.",
+    "d": "To change the color of lights.",
+    "Answer": "c"
+  },
+  {
+    "class": "SimpleLight.cs",
+    "Question": "What is a complex light in the context of SimpleLight?",
+    "a": "A light with multiple sources.",
+    "b": "A light that emits multiple colors.",
+    "c": "A light that is attached to a child object.",
+    "d": "A light that is brighter than a simple light.",
+    "Answer": "c"
+  },
+  {
+    "class": "SimpleLight.cs",
+    "Question": "What does the TurnOn method do in SimpleLight?",
+    "a": "Turns the light off.",
+    "b": "Sets the light's color.",
+    "c": "Turns the light on and sets its color.",
+    "d": "Sets the light's intensity.",
+    "Answer": "c"
+  },
+  {
+    "class": "KitsController.cs",
+    "Question": "What is the purpose of the KitsController class?",
+    "a": "To control player movement and animation",
+    "b": "To manage player behavior",
+    "c": "To handle player combat actions",
+    "d": "To store references to key player components",
+    "Answer": "a"
+  },
+  {
+    "class": "KitsController.cs",
+    "Question": "Which method is used to make Kits run to a random destination?",
+    "a": "GoThere()",
+    "b": "UpdateAnimator()",
+    "c": "LightsOut()",
+    "d": "LightsBackOn()",
+    "Answer": "a"
+  },
+  {
+    "class": "KitsController.cs",
+    "Question": "What does the KitsController class do when the power goes out?",
+    "a": "Start running to a random destination",
+    "b": "Light up Kits mask",
+    "c": "Stop moving",
+    "d": "Turn off Kits mask",
+    "Answer": "b"
+  },
+  {
+    "class": "Level.LevelLightsManager",
+    "Question": "What is the purpose of the Level.LevelLightsManager class?",
+    "a": "To control player movement.",
+    "b": "To manage lights during a power outage and when the power is restored.",
+    "c": "To handle player combat actions.",
+    "d": "To store references to key player components.",
+    "Answer": "b"
+  },
+  {
+    "class": "Level.LevelLightsManager",
+    "Question": "What is the emergencyLights field in Level.LevelLightsManager?",
+    "a": "A collection of lights that stay on during a power outage.",
+    "b": "A variable that tells you if the lights are on or off.",
+    "c": "A manager for the lights in the level.",
+    "d": "A list of all the lights in the level.",
+    "Answer": "a"
+  },
+  {
+    "class": "Level.LevelLightsManager",
+    "Question": "What does the OnPowerSwitchActivated method do in Level.LevelLightsManager?",
+    "a": "Turns off the lights.",
+    "b": "Turns on the lights.",
+    "c": "Increments the count of activated power switches.",
+    "d": "Decrements the count of activated power switches.",
+    "Answer": "c"
+  },
+  {
+    "class": "LevelManager.cs",
+    "Question": "In LevelManager.cs, what is the purpose of the mainMenuCameraTransform field?",
+    "a": "To set the camera position for the main menu scene.",
+    "b": "To set the camera position for the player respawn point.",
+    "c": "To set the camera position for the level start point.",
+    "d": "To set the camera position for the beast spawn point.",
+    "Answer": "a"
+  },
+  {
+    "class": "LevelManager.cs",
+    "Question": "What does the FinishedAndExitedLevel() method do in LevelManager.cs?",
+    "a": "Calculates the time to beat the level and saves it.",
+    "b": "Unloads the current level and loads the next one.",
+    "c": "Locks the main door to prevent the player from re-entering the level.",
+    "d": "All of the above",
+    "Answer": "d"
+  },
+  {
+    "class": "LevelManager.cs",
+    "Question": "What happens when a player detector is triggered in LevelManager.cs?",
+    "a": "The player enters the next level.",
+    "b": "The player exits the current level.",
+    "c": "The player respawns at the last checkpoint.",
+    "d": "The player's health is restored.",
+    "Answer": "b"
+  },
+  {
+    "class": "Level.LevelRoomPuzzleMaster",
+    "Question": "What is the main function of the LevelRoomPuzzleMaster abstract class?",
+    "a": "To manage puzzle room behavior.",
+    "b": "To handle player interactions.",
+    "c": "To control player movement.",
+    "d": "To store references to key player components.",
+    "Answer": "a"
+  },
+  {
+    "class": "Level.LevelRoomPuzzleMaster",
+    "Question": "What is the purpose of the OnStart method in LevelRoomPuzzleMaster?",
+    "a": "To initialize puzzle room components.",
+    "b": "To start the puzzle room music.",
+    "c": "To activate puzzle room traps.",
+    "d": "To display puzzle room instructions.",
+    "Answer": "a"
+  },
+  {
+    "class": "Level.LevelRoomPuzzleMaster",
+    "Question": "What is the role of the OnEnable method in LevelRoomPuzzleMaster?",
+    "a": "To enable puzzle room collisions.",
+    "b": "To activate puzzle room power-ups.",
+    "c": "To reset puzzle room traps.",
+    "d": "To enable puzzle room interactions.",
+    "Answer": "d"
+  },
+  {
+    "class": "LevelSummaryAdapter.cs",
+    "Question": "What does the LevelSummaryAdapter class in Unity do?",
+    "a": "Controls player movement",
+    "b": "Stores level summary information",
+    "c": "Manages player combat actions",
+    "d": "Generates random destinations",
+    "Answer": "b"
+  },
+  {
+    "class": "LevelSummaryAdapter.cs",
+    "Question": "What method is used to display the previous level summary screen?",
+    "a": "Start()",
+    "b": "Update()",
+    "c": "Awake()",
+    "d": "OnEnable()",
+    "Answer": "a"
+  },
+  {
+    "class": "LevelSummaryAdapter.cs",
+    "Question": "Where does the LevelSummaryAdapter class get the previous level summary information from?",
+    "a": "Player Input",
+    "b": "PlayerPrefs",
+    "c": "Random Generation",
+    "d": "Scene Transition",
+    "Answer": "b"
+  },
+  {
+    "class": "PowerOutageBeastReleaseManager.cs",
+    "Question": "What is the purpose of the PowerOutageBeastReleaseManager class?",
+    "a": "To manage player combat actions",
+    "b": "To manage power outages and beast releases",
+    "c": "To store references to key player components",
+    "d": "To handle player movement",
+    "Answer": "b"
+  },
+  {
+    "class": "PowerOutageBeastReleaseManager.cs",
+    "Question": "What does the IsItOkToCutThePowerAndReleaseBeast() method do?",
+    "a": "Checks if the player is holding something",
+    "b": "Checks if the player is inside the forbidden area",
+    "c": "Checks if the player is in combat",
+    "d": "Checks if the power is on",
+    "Answer": "b"
+  },
+  {
+    "class": "PowerOutageBeastReleaseManager.cs",
+    "Question": "When does the CutPowerAndReleaseBeast() method get called?",
+    "a": "When the player enters the forbidden area",
+    "b": "When the player releases the beast",
+    "c": "When the power is back on",
+    "d": "When the time until the next outage is up",
+    "Answer": "d"
+  },
+  {
+    "class": "PowerSwitchUiHelper.cs",
+    "Question": "What is the purpose of the PowerSwitchUiHelper class?",
+    "a": "To activate power switches",
+    "b": "To manage the UI for the power switches",
+    "c": "To turn the lights on and off",
+    "d": "To control player movement",
+    "Answer": "b"
+  },
+  {
+    "class": "PowerSwitchUiHelper.cs",
+    "Question": "What is the name of the method that is called by LevelLightsManager.cs when a power switch is activated?",
+    "a": "PowerSwitchActivated()",
+    "b": "LightsOut()",
+    "c": "LightsBackOn()",
+    "d": "CurrentObjectiveUpdate()",
+    "Answer": "a"
+  },
+  {
+    "class": "PowerSwitchUiHelper.cs",
+    "Question": "What does the LightsBackOn() method do?",
+    "a": "Updates the UI to show the activated power switches count",
+    "b": "Turns the lights back on",
+    "c": "Removes the current objective text from the UI",
+    "d": "Activates a power switch",
+    "Answer": "c"
+  },
+  {
+    "class": "Level1EventHub.cs",
+    "Question": "What is the purpose of a method like TeleportToSafety() in Level1EventHub.cs?",
+    "a": "To teleport the player to safety.",
+    "b": "To end the level.",
+    "c": "To start the level.",
+    "d": "To reset the player's health.",
+    "Answer": "a"
+  },
+  {
+    "class": "Level1EventHub.cs",
+    "Question": "What type of design pattern does Level1EventHub.cs implement?",
+    "a": "Singleton",
+    "b": "Factory",
+    "c": "EventHub",
+    "d": "Observer",
+    "Answer": "c"
+  },
+  {
+    "class": "Level1EventHub.cs",
+    "Question": "In Level1EventHub.cs, what does the Room1PoolUpdate() method do?",
+    "a": "Updates the room's pool of objects.",
+    "b": "Adds an object to the room's pool.",
+    "c": "Removes an object from the room's pool.",
+    "d": "All of the above.",
+    "Answer": "d"
+  },
+  {
+    "class": "Level1Manager.cs",
+    "Question": "What does the GameStartTask() method do?",
+    "a": "Starts a countdown and resets player position",
+    "b": "Plays a player wake up animation",
+    "c": "Loads the next level",
+    "d": "Unloads current level",
+    "Answer": "b"
+  },
+  {
+    "class": "Level1Manager.cs",
+    "Question": "What is the purpose of the PlayerWokeUp() method?",
+    "a": "Disables player and gameplay UI",
+    "b": "Unlocks the main door",
+    "c": "Subscribes to some events",
+    "d": "Enables player and gameplay UI",
+    "Answer": "d"
+  },
+  {
+    "class": "Level1Manager.cs",
+    "Question": "What does the LightsBackOn() method do?",
+    "a": "Listens to some events",
+    "b": "Unlocks the main door",
+    "c": "Teleports player to a safe place",
+    "d": "Disables player and gameplay UI",
+    "Answer": "b"
+  },
+  {
+    "class": "Level1PuzzleMaster.cs",
+    "Question": "What does the Level1PuzzleMaster class do?",
+    "a": "Manages all puzzle room managers in level 1",
+    "b": "Controls player movement",
+    "c": "Handles player combat actions",
+    "d": "Stores references to key player components",
+    "Answer": "a"
+  },
+  {
+    "class": "Level1PuzzleMaster.cs",
+    "Question": "What methods are called from Level1Manager to the Level1PuzzleMaster?",
+    "a": "OnStart, OnEnable, and OnDisable",
+    "b": "Update, FixedUpdate, and OnGUI",
+    "c": "Awake, Start, and OnDestroy",
+    "d": "OnApplicationQuit, OnApplicationFocus, and OnApplicationPause",
+    "Answer": "a"
+  },
+  {
+    "class": "Level1PuzzleMaster.cs",
+    "Question": "What are the names of the puzzle room managers that are managed by the Level1PuzzleMaster?",
+    "a": "Level1Room0PuzzleMaster, Level1Room1PuzzleMaster, Level1Room2PuzzleMaster, Level1Room3PuzzleMaster, and Level1Room4PuzzleMaster",
+    "b": "PlayerManager, EnemyManager, LevelManager, and GameManager",
+    "c": "InputManager, AudioManager, CameraManager, and SceneManager",
+    "d": "UIManager, AnimationManager, PhysicsManager, and NetworkManager",
+    "Answer": "a"
+  },
+  {
+    "class": "Level1RoomPuzzleMaster.cs",
+    "Question": "What is the purpose of the puzzleIndicator variable in the Level1RoomPuzzleMaster class?",
+    "a": "To indicate that a puzzle has been solved",
+    "b": "To control the player's movement",
+    "c": "To manage the behavior of enemies",
+    "d": "To store the player's current position",
+    "Answer": "a"
+  },
+  {
+    "class": "Level1RoomPuzzleMaster.cs",
+    "Question": "What is the purpose of the turnedOnAfterPuzzle array in the Level1RoomPuzzleMaster class?",
+    "a": "To store references to lights that are turned on after a puzzle is solved",
+    "b": "To control the player's health",
+    "c": "To manage the behavior of doors",
+    "d": "To store the player's current score",
+    "Answer": "a"
+  },
+  {
+    "class": "Level1RoomPuzzleMaster.cs",
+    "Question": "What is the purpose of the puzzleMainDoor and puzzleSideDoor variables in the Level1RoomPuzzleMaster class?",
+    "a": "To control the player's movement",
+    "b": "To manage the behavior of enemies",
+    "c": "To unlock doors after a puzzle is solved",
+    "d": "To store the player's current position",
+    "Answer": "c"
+  },
+  {
+    "class": "Lvl1EventFirstBeastSpawn.cs",
+    "Question": "What does the All4PuzzlesAreSolved() method in Lvl1EventFirstBeastSpawn.cs do?",
+    "a": "Activates all player detectors",
+    "b": "Disables all player detectors",
+    "c": "Activates all four puzzles",
+    "d": "Disables all four puzzles",
+    "Answer": "a"
+  },
+  {
+    "class": "Lvl1EventFirstBeastSpawn.cs",
+    "Question": "Which method in Lvl1EventFirstBeastSpawn.cs is called when the player enters any player detector and what does it do?",
+    "a": "PlayerDetectorTriggered(), and it activates the beast",
+    "b": "PlayerDetectorTriggered(), and it teleports the player to a safe room",
+    "c": "PlayerDetectorTriggered(), and it turns off the lights",
+    "d": "PlayerDetectorTriggered(), and it unlocks all doors",
+    "Answer": "b"
+  },
+  {
+    "class": "Lvl1EventFirstBeastSpawn.cs",
+    "Question": "What does the PowerSwitchActivated() method do when id is 0?",
+    "a": "Activates all power switches",
+    "b": "Deactivates all power switches",
+    "c": "Unlocks all doors",
+    "d": "Locks all doors",
+    "Answer": "c"
+  },
+  {
+    "class": "Lvl1FriendManager.cs",
+    "Question": "What is the purpose of the Lvl1FriendManager class?",
+    "a": "To manage all the friend voice tracks in level 1",
+    "b": "To control player movement",
+    "c": "To handle player combat actions",
+    "d": "To store references to key player components",
+    "Answer": "a"
+  },
+  {
+    "class": "Lvl1FriendManager.cs",
+    "Question": "What does the SolvedPuzzle method do in Lvl1FriendManager.cs?",
+    "a": "Plays the sound when a puzzle is solved",
+    "b": "Teleports the player",
+    "c": "Returns a random destination",
+    "d": "Sets the player position",
+    "Answer": "a"
+  },
+  {
+    "class": "Lvl1FriendManager.cs",
+    "Question": "What events does the Lvl1FriendManager class subscribe to?",
+    "a": "PlayerDetectorTriggered, LightsBackOn, BeastStateUpdate",
+    "b": "PlayerMovement, PlayerCombat, PlayerHealth",
+    "c": "LevelStart, LevelEnd, GameOver",
+    "d": "Input, Update, FixedUpdate",
+    "Answer": "a"
+  },
+  {
+    "class": "Lvl1TutorialManager.cs",
+    "Question": "What is the purpose of the Lvl1TutorialManager class?",
+    "a": "To handle player movement",
+    "b": "To manage some player behavior functionality",
+    "c": "To store references to key player components",
+    "d": "To control player combat actions",
+    "Answer": "b"
+  },
+  {
+    "class": "Lvl1TutorialManager.cs",
+    "Question": "What is the purpose of the PlayerDetectorTriggered method in Lvl1TutorialManager.cs?",
+    "a": "To show the tutorial message for a player detector",
+    "b": "To activate the next trigger zone",
+    "c": "To hide the tutorial text",
+    "d": "To collect a collectable",
+    "Answer": "a"
+  },
+  {
+    "class": "Lvl1TutorialManager.cs",
+    "Question": "What is the purpose of the PlayerCollectedCollectable method in Lvl1TutorialManager.cs?",
+    "a": "To show the tutorial message for a collectable",
+    "b": "To set a corresponding bool in PlayerGunItemManager to true",
+    "c": "To collect a collectable",
+    "d": "To activate the next trigger zone",
+    "Answer": "a"
+  },
+  {
+    "class": "SafePlaceTeleporter.cs",
+    "Question": "What is the purpose of the SafePlaceTeleporter class in Level1.cs?",
+    "a": "To teleport the player to the farthest safe place from the beast when the player's health reaches 0.",
+    "b": "To manage the player's movement.",
+    "c": "To handle player combat actions.",
+    "d": "To store references to key player components.",
+    "Answer": "a"
+  },
+  {
+    "class": "SafePlaceTeleporter.cs",
+    "Question": "What does the OnTeleportToSafety() method do in SafePlaceTeleporter.cs?",
+    "a": "It teleports the player to the farthest safe place from the beast.",
+    "b": "It sets the player's health to 0.",
+    "c": "It returns a random safe place.",
+    "d": "It disables the SafePlaceTeleporter script.",
+    "Answer": "a"
+  },
+  {
+    "class": "SafePlaceTeleporter.cs",
+    "Question": "What happens when the SafePlaceTeleporter class is enabled?",
+    "a": "It subscribes to the OnTeleportToSafety event.",
+    "b": "It teleports the player to the farthest safe place.",
+    "c": "It unregisters from the OnTeleportToSafety event.",
+    "d": "It sets the player's health to 0.",
+    "Answer": "a"
+  },
+  {
+    "class": "Level1Room0PuzzleMaster.cs",
+    "Question": "What is the purpose of the Level1Room0PuzzleMaster class?",
+    "a": "To control player movement",
+    "b": "To implement puzzle logic for a starting room",
+    "c": "To manage some player behavior functionality",
+    "d": "To store references to key player components",
+    "Answer": "b"
+  },
+  {
+    "class": "Level1Room0PuzzleMaster.cs",
+    "Question": "What does the PowerCoreInserted() method do in Level1Room0PuzzleMaster?",
+    "a": "Locks the main door",
+    "b": "Unlocks the main door if the right power core is inserted",
+    "c": "Teleports the player",
+    "d": "Sets the player position",
+    "Answer": "b"
+  },
+  {
+    "class": "Level1Room0PuzzleMaster.cs",
+    "Question": "What event does the Level1Room0PuzzleMaster class subscribe to and why?",
+    "a": "OnPowerCoreInserted",
+    "b": "OnPowerCoreRemoved",
+    "c": "OnPlayerDeath",
+    "d": "OnPlayerRespawn",
+    "Answer": "a"
+  },
+  {
+    "class": "Level1Room1PuzzleMaster.cs",
+    "Question": "What is the purpose of the PuzzleCompleted() method in Level1Room1PuzzleMaster.cs?",
+    "a": "To check if all pools are filled.",
+    "b": "To unlock the main door.",
+    "c": "To turn on the puzzle indicator.",
+    "d": "To update the friend manager.",
+    "Answer": "b"
+  },
+  {
+    "class": "Level1Room1PuzzleMaster.cs",
+    "Question": "What does the Room1PoolUpdate(int id, bool isFull) in Level1Room1PuzzleMaster.cs do?",
+    "a": "To subscribe to an event.",
+    "b": "To check if a pool is full.",
+    "c": "To update the array of pools.",
+    "d": "To call the PuzzleCompleted() method.",
+    "Answer": "c"
+  },
+  {
+    "class": "Level1Room1PuzzleMaster.cs",
+    "Question": "What happens when the PuzzleCompleted() method is called?",
+    "a": "The main door is unlocked.",
+    "b": "The puzzle indicator turns green.",
+    "c": "The friend manager is updated.",
+    "d": "All of the above.",
+    "Answer": "d"
+  },
+  {
+    "class": "Level1Room2PuzzleMaster.cs",
+    "Question": "What is the purpose of the PuzzleCompleted() function in Level1Room2PuzzleMaster.cs?",
+    "a": "To unlock the main door.",
+    "b": "To update the wires to show the current status of the puzzle",
+    "c": "To check if all lights are injected correctly",
+    "d": "To call the Lvl1FriendManager.Instance.SolvedPuzzle() function.",
+    "Answer": "a"
+  },
+  {
+    "class": "Level1Room2PuzzleMaster.cs",
+    "Question": "What event does the Level1Room2PuzzleMaster.cs class subscribe to?",
+    "a": "OnLightGunLightInjected",
+    "b": "OnStart",
+    "c": "OnDisable",
+    "d": "OnEnable",
+    "Answer": "a"
+  },
+  {
+    "class": "Level1Room2PuzzleMaster.cs",
+    "Question": "What does the CheckForCompletion() function do in Level1Room2PuzzleMaster.cs?",
+    "a": "To update the wires to show the current status of the puzzle",
+    "b": "To call the PuzzleCompleted() function if all lights are injected correctly",
+    "c": "To check if all lights are injected correctly",
+    "d": "To subscribe to some events",
+    "Answer": "b"
+  },
+  {
+    "class": "Level1Room3PuzzleMaster.cs",
+    "Question": "In Level1Room3PuzzleMaster.cs, what is the purpose of the 'PowerCoreInserted' method?",
+    "a": "To lock the main door",
+    "b": "To inject light into the 'spawRoomSideDoor'",
+    "c": "To unlock the main door",
+    "d": "To move the cage",
+    "Answer": "c"
+  },
+  {
+    "class": "Level1Room3PuzzleMaster.cs",
+    "Question": "What happens in Level1Room3PuzzleMaster.cs when a power core is ejected from the power station and it was for this room?",
+    "a": "The main door is unlocked",
+    "b": "The light in the room is turned off",
+    "c": "The puzzle indicator turns on",
+    "d": "The cage is unlocked",
+    "Answer": "d"
+  },
+  {
+    "class": "Level1Room3PuzzleMaster.cs",
+    "Question": "In Level1Room3PuzzleMaster.cs, what happens when the 'OnEnable' method is called?",
+    "a": "The 'PowerCoreInserted' and 'PowerCoreEjected' methods are subscribed to",
+    "b": "The 'PowerCoreInserted' method is called",
+    "c": "The 'PowerCoreEjected' method is called",
+    "d": "The cage is moved",
+    "Answer": "a"
+  },
+  {
+    "class": "Level1Room4PuzzleMaster.cs",
+    "Question": "What is the purpose of the glass variable in the Level1Room4PuzzleMaster class? ",
+    "a": "To store a reference to the player object.",
+    "b": "To control the movement of the glass pieces.",
+    "c": "To manage the lights in the puzzle room.",
+    "d": "To keep track of the power core.",
+    "Answer": "b"
+  },
+  {
+    "class": "Level1Room4PuzzleMaster.cs",
+    "Question": "What happens when a green light is injected into light with id 41 in the Level1Room4PuzzleMaster class? ",
+    "a": "The power core is inserted into the power station.",
+    "b": "The puzzle is completed.",
+    "c": "The glass pieces move down.",
+    "d": "The main door is unlocked.",
+    "Answer": "c"
+  },
+  {
+    "class": "Level1Room4PuzzleMaster.cs",
+    "Question": "What is the purpose of the OnEnable() method in the Level1Room4PuzzleMaster class? ",
+    "a": "To initialize the glass pieces.",
+    "b": "To register for events.",
+    "c": "To unlock the main door.",
+    "d": "To start the puzzle timer.",
+    "Answer": "b"
+  },
+  {
+    "class": "Lvl1R1ObjectDetector.cs",
+    "Question": "What is the purpose of the Lvl1R1ObjectDetector class?",
+    "a": "To detect when an object is added to or removed from a pool.",
+    "b": "To control player movement.",
+    "c": "To manage some player behavior functionality.",
+    "d": "To store references to key player components.",
+    "Answer": "a"
+  },
+  {
+    "class": "Lvl1R1ObjectDetector.cs",
+    "Question": "What happens when an object enters the trigger zone (pool)?",
+    "a": "The Lvl1R1ObjectDetector class is attached to the pools.",
+    "b": "The object count is increased and the Room1PoolUpdate event is called.",
+    "c": "The object is teleported to another location.",
+    "d": "The player's position is set.",
+    "Answer": "b"
+  },
+  {
+    "class": "Lvl1R1ObjectDetector.cs",
+    "Question": "What happens when an object exits the trigger zone (pool)?",
+    "a": "The object count is increased and the Room1PoolUpdate event is called.",
+    "b": "The object count is decreased and the Room1PoolUpdate event is called.",
+    "c": "The object is teleported to another location.",
+    "d": "The player's position is set.",
+    "Answer": "b"
+  },
+  {
+    "class": "KeyGlassCage.cs",
+    "Question": "What does the KeyGlassCage class do?",
+    "a": "Controls player movement",
+    "b": "Manages key items",
+    "c": "Opens and closes the glass cage that holds the keys in level 2",
+    "d": "Handles player combat actions",
+    "Answer": "c"
+  },
+  {
+    "class": "KeyGlassCage.cs",
+    "Question": "What is the purpose of the Open() method?",
+    "a": "Closes the cage",
+    "b": "Teleports the player",
+    "c": "Reveals the key by opening the cage",
+    "d": "Stores references to key player components",
+    "Answer": "c"
+  },
+  {
+    "class": "KeyGlassCage.cs",
+    "Question": "What is the purpose of the Transform glass variable?",
+    "a": "Stores a reference to the player transform",
+    "b": "Stores a reference to the glass cage transform",
+    "c": "Stores a reference to the key transform",
+    "d": "Stores a reference to the camera transform",
+    "Answer": "b"
+  },
+  {
+    "class": "Level2MainCoreStationManager.cs",
+    "Question": "What happens when you insert the first power core in Level2MainCoreStationManager.cs?",
+    "a": "The platform is brought up",
+    "b": "A random destination is returned",
+    "c": "The main door is unlocked",
+    "d": "The player position is set",
+    "Answer": "a"
+  },
+  {
+    "class": "Level2MainCoreStationManager.cs",
+    "Question": "What is the purpose of the OnEnable() method in Level2MainCoreStationManager.cs?",
+    "a": "To enable the platform animator",
+    "b": "To add the cores to the platform",
+    "c": "To subscribe to some events",
+    "d": "To set the parent of the cores to null",
+    "Answer": "c"
+  },
+  {
+    "class": "Level2MainCoreStationManager.cs",
+    "Question": "What does the SolvedPuzzle() method do in Level2MainCoreStationManager.cs?",
+    "a": "Unlocks the main door",
+    "b": "Calls SolvedAllPuzzles()",
+    "c": "Adds 1 to the solvedPuzzles count",
+    "d": "All of the above",
+    "Answer": "d"
+  },
+  {
+    "class": "Level2Manager.cs",
+    "Question": "What is the purpose of the Level2Manager class?",
+    "a": "It loads the next level",
+    "b": "It manages the puzzles in the level",
+    "c": "It manages the main core station in the level",
+    "d": "It acts as a hub for references to other classes and delegates events to them",
+    "Answer": "d"
+  },
+  {
+    "class": "Level2Manager.cs",
+    "Question": "What is the purpose of the OnPuzzle1ButtonPressed() method?",
+    "a": "It is triggered when the puzzle 1 button is pressed and forwards the event to the Level2PuzzleMaster class",
+    "b": "It is triggered when the puzzle 2 is completed and forwards the event to the Level2PuzzleMaster class",
+    "c": "It is triggered when the puzzle 3 key holder light changes color and forwards the event to the Level2PuzzleMaster class",
+    "d": "It is triggered when the stage 2 pressure plate is activated and forwards the event to the Level2PuzzleMaster class",
+    "Answer": "a"
+  },
+  {
+    "class": "Level2Manager.cs",
+    "Question": "What is the purpose of the OnEnable() method?",
+    "a": "It is called when the Level2Manager object is enabled and calls OnEnable on the Level2PuzzleMaster and Level2MainCoreStationManager classes",
+    "b": "It is called when the Level2Manager object is disabled and calls OnEnable on the Level2PuzzleMaster and Level2MainCoreStationManager classes",
+    "c": "It is called when the Level2PuzzleMaster object is enabled and calls OnEnable on the Level2Manager and Level2MainCoreStationManager classes",
+    "d": "It is called when the Level2PuzzleMaster object is disabled and calls OnEnable on the Level2Manager and Level2MainCoreStationManager classes",
+    "Answer": "a"
+  },
+  {
+    "class": "Lvl2FriendManager.cs",
+    "Question": "What is the purpose of the Lvl2FriendManager class in Lvl2FriendManager.cs?",
+    "a": "To control player movement",
+    "b": "To manage some player behavior functionality",
+    "c": "To handle player combat actions",
+    "d": "To store references to key player components",
+    "Answer": "b"
+  },
+  {
+    "class": "Lvl2FriendManager.cs",
+    "Question": "Which events does Lvl2FriendManager.cs subscribe to?",
+    "a": "OnLevelComplete and OnLevelStart events",
+    "b": "OnLightsBackOn and OnLightsOut events",
+    "c": "OnPlayerDeath and OnPlayerRespawn events",
+    "d": "OnEnemySpawned and OnEnemyDespawned events",
+    "Answer": "b"
+  },
+  {
+    "class": "PressurePlate.cs",
+    "Question": "What is the main responsibility of the PressurePlate class?",
+    "a": "To control the movement of the player",
+    "b": "To handle the pressure plate's behavior",
+    "c": "To manage the game's score",
+    "d": "To load and save game data",
+    "Answer": "b"
+  },
+  {
+    "class": "PressurePlate.cs",
+    "Question": "What happens when an object enters the pressure plate's trigger collider?",
+    "a": "The pressure plate moves to its active position",
+    "b": "The game ends",
+    "c": "A sound effect is played",
+    "d": "The player's health is decreased",
+    "Answer": "a"
+  },
+  {
+    "class": "PressurePlate.cs",
+    "Question": "What is the purpose of the onStateChange UnityEvent?",
+    "a": "To increase the player's score",
+    "b": "To change the pressure plate's color",
+    "c": "To play a sound effect",
+    "d": "To notify other objects when the state of the pressure plate changes",
+    "Answer": "d"
+  },
+  {
+    "class": "Level2Puzzle2PixelPuzzle.cs",
+    "Question": "What is the purpose of the Level2Puzzle2PixelPuzzle class?",
+    "a": "To manage player movement",
+    "b": "To implement some puzzle logic",
+    "c": "To handle player combat actions",
+    "d": "To store references to key player components",
+    "Answer": "b"
+  },
+  {
+    "class": "Level2Puzzle2PixelPuzzle.cs",
+    "Question": "What does the OnPixelChanged method do in Level2Puzzle2PixelPuzzle.cs?",
+    "a": "Finds the farthest destination from the player",
+    "b": "Teleports the player",
+    "c": "Checks if the puzzle is completed",
+    "d": "Sets the player position",
+    "Answer": "c"
+  },
+  {
+    "class": "Level2Puzzle2PixelPuzzle.cs",
+    "Question": "What is the wire in the Level2Puzzle2PixelPuzzle class responsible for?",
+    "a": "To indicate the current level",
+    "b": "To show the player's health",
+    "c": "To display the puzzle's completion status",
+    "d": "To indicate the number of enemies remaining",
+    "Answer": "c"
+  },
+  {
+    "class": "Level2Puzzle3LastPhaseSubStairsRoomManager.cs",
+    "Question": "What is the purpose of the \\'requiredColor\\' variable in the \\'Level2Puzzle3LastPhaseSubStairsRoomManager\\' script?",
+    "a": "To determine the color of the player",
+    "b": "To control the size of the power source",
+    "c": "To set the color of the stairs",
+    "d": "To identify the correct light color for activating the power source",
+    "Answer": "d"
+  },
+  {
+    "class": "Level2Puzzle3LastPhaseSubStairsRoomManager.cs",
+    "Question": "What happens when the \\'PowerSourceLightChanged\\' method is called with the correct \\'color\\' parameter?",
+    "a": "The stairs are deactivated",
+    "b": "The stairs are destroyed",
+    "c": "The power source is activated, and the stairs are activated",
+    "d": "The power source is deactivated, and the stairs are deactivated",
+    "Answer": "c"
+  },
+  {
+    "class": "Level2Puzzle3LastPhaseSubStairsRoomManager.cs",
+    "Question": "When the power source is deactivated, what happens to the stairs controlled by the \\'Level2Puzzle3LastPhaseSubStairsRoomManager\\' script?",
+    "a": "They are destroyed",
+    "b": "They are teleported to a random location",
+    "c": "They remain active",
+    "d": "They are deactivated",
+    "Answer": "d"
+  },
+  {
+    "class": "Level2PuzzleMaster.cs",
+    "Question": "What is the purpose of the Level2PuzzleMaster class?",
+    "a": "To control player movement",
+    "b": "To manage puzzle room managers in level 2",
+    "c": "To handle player combat actions",
+    "d": "To store references to key player components",
+    "Answer": "b"
+  },
+  {
+    "class": "Level2PuzzleMaster.cs",
+    "Question": "Which delegate method is called when the first pressure plate in stage 1 of puzzle 3 is activated?",
+    "a": "Puzzle3KeyHolderLightChanged()",
+    "b": "Stage1PressurePlateChangedFirst()",
+    "c": "Stage1PressurePlateChangedSecond()",
+    "d": "Stage2PressurePlateChanged()",
+    "Answer": "b"
+  },
+  {
+    "class": "Level2PuzzleMaster.cs",
+    "Question": "What are the methods called when enabling or disabling the Level2PuzzleMaster?",
+    "a": "OnStart() and OnDisable()",
+    "b": "OnEnable() and OnDisable()",
+    "c": "OnStart() and OnEnable()",
+    "d": "OnDisable() and OnEnable()",
+    "Answer": "b"
+  },
+  {
+    "class": "Level2Room1PuzzleMaster.cs",
+    "Question": "What does the OnPuzzle1ButtonPressed() method do?",
+    "a": "Changes the light colors",
+    "b": "Checks if the light types are correct and opens the corresponding cages",
+    "c": "Closes all the cages",
+    "d": "Locks the room",
+    "Answer": "b"
+  },
+  {
+    "class": "Level2Room1PuzzleMaster.cs",
+    "Question": "What is the purpose of the _shouldBeClosed list?",
+    "a": "To store the cages that are currently open",
+    "b": "To store the cages that should be closed after a while",
+    "c": "To store the cages that are currently closed",
+    "d": "To store the cages that should be opened after a while",
+    "Answer": "b"
+  },
+  {
+    "class": "Level2Room1PuzzleMaster.cs",
+    "Question": "What happens when the player presses the only button in puzzle 1?",
+    "a": "The cages open",
+    "b": "The cages close",
+    "c": "The light types change",
+    "d": "The room is locked",
+    "Answer": "a"
+  },
+  {
+    "class": "Level2Room2PuzzleMaster.cs",
+    "Question": "What is the purpose of the Level2Room2PuzzleMaster class?",
+    "a": "To control player movement",
+    "b": "To open a cage when all puzzles are completed",
+    "c": "To handle player combat actions",
+    "d": "To store references to key player components",
+    "Answer": "b"
+  },
+  {
+    "class": "Level2Room2PuzzleMaster.cs",
+    "Question": "What happens in the CheckForCompletion method?",
+    "a": "It opens the cage if all puzzles are completed",
+    "b": "It teleports the player",
+    "c": "It returns a random destination",
+    "d": "It sets the player position",
+    "Answer": "a"
+  },
+  {
+    "class": "Level2Room2PuzzleMaster.cs",
+    "Question": "What does the OnEnable method do in the Level2Room2PuzzleMaster script?",
+    "a": "It subscribes to some events",
+    "b": "It unsubscribes to some events",
+    "c": "It sets the player position",
+    "d": "It returns a random destination",
+    "Answer": "a"
+  },
+  {
+    "class": "Level2Room3PuzzleMaster.cs",
+    "Question": "Why is the `Solved()` function is called in `Level2Room3PuzzleMaster`?",
+    "a": "To activate the player's lights",
+    "b": "To deactivate the player's lights",
+    "c": "To open the cage and end the puzzle",
+    "d": "To set the pressure plates on the stage",
+    "Answer": "c"
+  },
+  {
+    "class": "Level2Room3PuzzleMaster.cs",
+    "Question": "What does `OnStart()` function do in the `Level2Room3PuzzleMaster` class?",
+    "a": "Subscribes to various events",
+    "b": "Unsubscribes to various events",
+    "c": "Changes the color of the wires",
+    "d": "Gets the materials database",
+    "Answer": "d"
+  },
+  {
+    "class": "Level2Room3PuzzleMaster.cs",
+    "Question": "What is the purpose of the function `KeyHolderLightChanged()` in `Level2Room3PuzzleMaster`?",
+    "a": "To check if all lights are the right color",
+    "b": "To open the cage",
+    "c": "To activate the stairs",
+    "d": "To change the color of the wires",
+    "Answer": "a"
+  },
+  {
+    "class": "LightGunDrivenSingleStair.cs",
+    "Question": "What is the purpose of the LightGunDrivenSingleStair class?",
+    "a": "To handle the light color of the Light Gun",
+    "b": "To activate/deactivate the stair and receive light color changes",
+    "c": "To control the movement of the Light Gun",
+    "d": "To manage the combat actions of the player",
+    "Answer": "b"
+  },
+  {
+    "class": "LightGunDrivenSingleStair.cs",
+    "Question": "What happens when the lightGun light changes its color?",
+    "a": "The stair is activated",
+    "b": "The stair is deactivated",
+    "c": "The stair's position is changed",
+    "d": "The stair's color is changed",
+    "Answer": "a"
+  },
+  {
+    "class": "LightGunDrivenSingleStair.cs",
+    "Question": "What activates the stair?",
+    "a": "When the lightGun light is the required color",
+    "b": "When the player steps on it",
+    "c": "When an enemy touches it",
+    "d": "When the player uses a specific item",
+    "Answer": "a"
+  },
+  {
+    "class": "SingleStair.cs",
+    "Question": "What is the purpose of the SingleStair class?",
+    "a": "To control player movement",
+    "b": "To manage a single stair's behavior",
+    "c": "To handle player combat actions",
+    "d": "To store references to key player components",
+    "Answer": "b"
+  },
+  {
+    "class": "SingleStair.cs",
+    "Question": "When is the stair initially set active?",
+    "a": "When the game starts",
+    "b": "When the player activates it",
+    "c": "When it is flipped",
+    "d": "It is never initially set active",
+    "Answer": "a"
+  },
+  {
+    "class": "SingleStair.cs",
+    "Question": "What does the Flip() method do?",
+    "a": "Activates the stair if it's inactive and vice versa",
+    "b": "Moves the stair to a specific position",
+    "c": "Deactivates the stair",
+    "d": "Sets the initial state of the stair",
+    "Answer": "a"
+  },
+  {
+    "class": "DeathRespawnManager.cs",
+    "Question": "What is the purpose of the 'PlayerManager' field in the 'DeathRespawnManager' class?",
+    "a": "To manage the player's health",
+    "b": "To control player movement",
+    "c": "To notify the player manager when the player dies",
+    "d": "To store references to key player components",
+    "Answer": "d"
+  },
+  {
+    "class": "DeathRespawnManager.cs",
+    "Question": "What method do you call when the player's health ends?",
+    "a": "PlayerHealthEnded()",
+    "b": "OnRespawnClicked()",
+    "c": "StartSequence()",
+    "d": "GetSpawnPosition()",
+    "Answer": "a"
+  },
+  {
+    "class": "DeathRespawnManager.cs",
+    "Question": "What does the 'OnRespawnClicked()' method do in the 'DeathRespawnManager' class?",
+    "a": "It respawns the player",
+    "b": "It shows the game over canvas",
+    "c": "It deactivates the 'beast killing player' animation sequence",
+    "d": "It locks the cursor",
+    "Answer": "c"
+  },
+  {
+    "class": "PlayerHealthManager.cs",
+    "Question": "What happens when the _healthAmount is equal to _maxHealth in PlayerHealthManager.cs?",
+    "a": "Regeneration timer is reset",
+    "b": "Health UI is updated",
+    "c": "Player gets hit",
+    "d": "Player healing is stopped",
+    "Answer": "d"
+  },
+  {
+    "class": "PlayerHealthManager.cs",
+    "Question": "What does PlayerGotHit() method do in PlayerHealthManager.cs?",
+    "a": "Resets regeneration timer",
+    "b": "Increases health",
+    "c": "Decreases health and checks if player is dead",
+    "d": "Invokes the PlayerBehaviourEventHub.OnPlayerGotHit",
+    "Answer": "c"
+  },
+  {
+    "class": "PlayerHealthManager.cs",
+    "Question": "What is the purpose of the OnEnable() and OnDisable() methods in PlayerHealthManager.cs?",
+    "a": "To handle player movement",
+    "b": "To manage UI elements",
+    "c": "To subscribe and unsubscribe to events",
+    "d": "To store references to key player components",
+    "Answer": "c"
+  },
+  {
+    "class": "PlayerKnockBack.cs",
+    "Question": "What is the purpose of the PlayerKnockBack class?",
+    "a": "To control player movement",
+    "b": "To manage player combat actions",
+    "c": "To handle knock back behavior of the player",
+    "d": "To storee references to key player components",
+    "Answer": "c"
+  },
+  {
+    "class": "PlayerKnockBack.cs",
+    "Question": "How is the knockback effect applied to the player?",
+    "a": "Through the character controller",
+    "b": "By directly modifying the player's transform",
+    "c": "Using a rigidbody component",
+    "d": "Via animation",
+    "Answer": "a"
+  },
+  {
+    "class": "PlayerKnockBack.cs",
+    "Question": "What happens when the impact variable reaches zero?",
+    "a": "The knock back effect stops",
+    "b": "The player's speed is increased",
+    "c": "The player is teleported to a random location",
+    "d": "The player's health is regenerated",
+    "Answer": "a"
+  },
+  {
+    "class": "PlayerManager.cs",
+    "Question": "What is the purpose of the PlayerManager class in the script?",
+    "a": "To manage the player's HUD display",
+    "b": "To provide localized text for the game",
+    "c": "To manage some player behavior functionality and act as a hub for other player behavior components",
+    "d": "To manage the AI and enemy behavior in the game",
+    "Answer": "c"
+  },
+  {
+    "class": "PlayerManager.cs",
+    "Question": "What function is called when the player dies and what does it do?",
+    "a": "FlyToHelicopter(), teleports the player to a helicopter",
+    "b": "Dead(), delegates to FirstPersonController and PlayerKnockBack",
+    "c": "SetInstantPositionRotation(), sets the player's position and rotation",
+    "d": "ForceTeleport(), instantly teleports the player to a destination",
+    "Answer": "b"
+  },
+  {
+    "class": "PlayerManager.cs",
+    "Question": "What is the purpose of the FarthestPlaceFromPlayer() method and what does it do?",
+    "a": "Returns the farthest place from the player given a list of positions",
+    "b": "Returns the closest place to the player given a list of positions",
+    "c": "Returns a random place from a list of positions",
+    "d": "Returns the player's current position",
+    "Answer": "a"
+  },
+  {
+    "class": "PlayerGunItem.cs",
+    "Question": "What is the main role of the PlayerGunItem.cs class?",
+    "a": "To deal damage to enemies",
+    "b": "To equip the player items and manage their animations",
+    "c": "To handle player movement",
+    "d": "To control player's health",
+    "Answer": "b"
+  },
+  {
+    "class": "PlayerGunItem.cs",
+    "Question": "What is the purpose of 'BringHandUpIfNeeded' method?",
+    "a": "To lower the player's hand",
+    "b": "To bring up the player's hand when equipping an item",
+    "c": "To control the player's shooting",
+    "d": "To equip the player's items",
+    "Answer": "b"
+  },
+  {
+    "class": "PlayerGunItem.cs",
+    "Question": "What method is responsible for handling the main functionality of an equipped item when the player presses the left mouse button?",
+    "a": "Init()",
+    "b": "LeftClicked()",
+    "c": "PutHandAway()",
+    "d": "NotActiveAnymore()",
+    "Answer": "b"
+  },
+  {
+    "class": "PlayerGunItemManager.cs",
+    "Question": "What is the role of PlayerGunItemManager on the player?",
+    "a": "Manage player credits",
+    "b": "Handle player health and healing",
+    "c": "Control player combat abilities",
+    "d": "Regulate player movement and animations",
+    "Answer": "c"
+  },
+  {
+    "class": "PlayerGunItemManager.cs",
+    "Question": "How does the PlayerGunItemManager manage player items?",
+    "a": "It assigns values to item attributes",
+    "b": "It stores references to item prefabs",
+    "c": "It monitors item availability",
+    "d": "It handles item placement in the scene",
+    "Answer": "c"
+  },
+  {
+    "class": "PlayerGunItemManager.cs",
+    "Question": "How does the PlayerGunItemManager initialize player items?",
+    "a": "By overriding their default settings",
+    "b": "By resetting their usage statistics",
+    "c": "By adjusting their visual appearance",
+    "d": "By activating their core functionality",
+    "Answer": "d"
+  },
+  {
+    "class": "PlayerFlashLightManager.cs",
+    "Question": "What happens in PlayerFlashLightManager.cs when the _capacity reaches 0?",
+    "a": "The flash light stops flashing",
+    "b": "The battery is set to full",
+    "c": "The flash light's intensity is increased",
+    "d": "The flash light starts flashing",
+    "Answer": "a"
+  },
+  {
+    "class": "PlayerFlashLightManager.cs",
+    "Question": "In PlayerFlashLightManager.cs when the player activates the item, which method is called?",
+    "a": "DeactiveItem()",
+    "b": "StartFlashing()",
+    "c": "NoMoreFlashing()",
+    "d": "Charging()",
+    "Answer": "b"
+  },
+  {
+    "class": "PlayerFlashLightManager.cs",
+    "Question": "What does PlayerFlashLightManager.cs do when the right click is pressed?",
+    "a": "Stops the flash light.",
+    "b": "Starts the flash light.",
+    "c": "Resets the item.",
+    "d": "Charges the battery.",
+    "Answer": "a"
+  },
+  {
+    "class": "LightGunBullet.cs",
+    "Question": "What is the injected light used for?",
+    "a": "To inject light into enemies",
+    "b": "To light up dark areas",
+    "c": "To grow the bullet",
+    "d": "To attract other light gun bullets",
+    "Answer": "b"
+  },
+  {
+    "class": "LightGunBullet.cs",
+    "Question": "What is the purpose of the HitNonInjectable() method?",
+    "a": "Destroy the bullet",
+    "b": "Grow the bullet into a ball",
+    "c": "Inject the light to the LightGunLight component",
+    "d": "Set the bullet's velocity to zero",
+    "Answer": "b"
+  },
+  {
+    "class": "LightGunLight.cs",
+    "Question": "What does the InjectLight() method do in LightGunLight.cs?",
+    "a": "Turns on the light by injecting it with a specified color.",
+    "b": "Turns off the light by sucking out its light.",
+    "c": "Returns the current light type and an indicator of whether the light is on or off.",
+    "d": "Turns off the additional light (if there is any) when the power is out.",
+    "Answer": "a"
+  },
+  {
+    "class": "LightGunLight.cs",
+    "Question": "How does LightGunLight.cs manage complex lights?",
+    "a": "It turns the complex lights off when the power is out and on when the power is back.",
+    "b": "It stores the additional light as a child of the LightGunLight object.",
+    "c": "It sets the color of the additional light to match the emissive color of the light material.",
+    "d": "All of the above.",
+    "Answer": "d"
+  },
+  {
+    "class": "LightGunLight.cs",
+    "Question": "What happens when the LightGunLight.cs object is disabled?",
+    "a": "The additional light is turned off.",
+    "b": "The onChanged UnityEvent is invoked.",
+    "c": "The light material is changed to the Off material.",
+    "d": "The light type is set to LightColor.Off.",
+    "Answer": "a"
+  },
+  {
+    "class": "LightGunVisuals.cs",
+    "Question": "What is the purpose of the PlayerLightGunManager.cs class in LightGunVisuals?",
+    "a": "To control player movement",
+    "b": "To manage some player behavior functionality",
+    "c": "To handle player combat actions",
+    "d": "To store references to key player components",
+    "Answer": "b"
+  },
+  {
+    "class": "LightGunVisuals.cs",
+    "Question": "What does the GunJustGotFilled() method do in PlayerLightGunManager.cs?",
+    "a": "Finds the farthest destination from the player",
+    "b": "Teleports the player",
+    "c": "Returns a random destination",
+    "d": "Sets the player position",
+    "Answer": "c"
+  },
+  {
+    "class": "LightGunVisuals.cs",
+    "Question": "What does the OnPullOut() method do in PlayerLightGunManager.cs?",
+    "a": "Shows the focus indicator",
+    "b": "Hides the focus indicator",
+    "c": "Changes the focus indicator color",
+    "d": "Changes the focus indicator size",
+    "Answer": "a"
+  },
+  {
+    "class": "PlayerLightGunManager.cs",
+    "Question": "What does the PlayerLightGunManager.LeftClicked() method do?",
+    "a": "Shoots a light bullet",
+    "b": "Empties the gun",
+    "c": "Refills the gun",
+    "d": "Plays a sound",
+    "Answer": "a"
+  },
+  {
+    "class": "PlayerLightGunManager.cs",
+    "Question": "What does the PlayerLightGunManager.FocusingOnALight() method do?",
+    "a": "Updates the visuals",
+    "b": "Plays a sound",
+    "c": "Shoots a bullet",
+    "d": "Starts the animation",
+    "Answer": "a"
+  },
+  {
+    "class": "PlayerLightGunManager.cs",
+    "Question": "What does the PlayerLightGunManager.FillTheGun() method do?",
+    "a": "Shoots a light bullet",
+    "b": "Plays a sound",
+    "c": "Refills the gun",
+    "d": "Starts the animation",
+    "Answer": "c"
+  },
+  {
+    "class": "PlayerTeleportManager",
+    "Question": "What happens when the player presses the left mouse button while holding the Teleporter item?",
+    "a": "It teleports the player to the current position",
+    "b": "It plants a new teleport seed",
+    "c": "It teleports the player to the current position if there is no teleport seed",
+    "d": "It does nothing",
+    "Answer": "c"
+  },
+  {
+    "class": "PlayerTeleportManager",
+    "Question": "What does the TeleportPlanter do?",
+    "a": "It manages the visuals of the teleport seed",
+    "b": "It instantiates the teleport seed object in the scene",
+    "c": "It teleports the player to the teleport seed",
+    "d": "It destroys the teleport seed",
+    "Answer": "b"
+  },
+  {
+    "class": "PlayerTeleportManager",
+    "Question": "When does the player teleport?",
+    "a": "When the player presses the left mouse button",
+    "b": "When the player presses the right mouse button",
+    "c": "When the teleport seed is destroyed",
+    "d": "When the player is hit by an enemy",
+    "Answer": "a"
+  },
+  {
+    "class": "TeleporterVisuals",
+    "Question": "In TeleporterVisuals, what is the purpose of the OnTeleported() method?",
+    "a": "To play the teleport sound and shake the camera.",
+    "b": "To set the animation trigger and parameter for the teleport animation.",
+    "c": "To plant a new seed.",
+    "d": "To destroy the teleport seed.",
+    "Answer": "b"
+  },
+  {
+    "class": "TeleporterVisuals",
+    "Question": "In TeleporterVisuals, which method is responsible for setting the HasSeed parameter in the animator?",
+    "a": "OnTeleported()",
+    "b": "OnNewSeedPlanted()",
+    "c": "PulledOutTeleporterWithAlreadyPlantedSeed()",
+    "d": "OnSeedDestroyed()",
+    "Answer": "b"
+  },
+  {
+    "class": "TeleporterVisuals",
+    "Question": "In TeleporterVisuals, what does the PulledOutTeleporterWithAlreadyPlantedSeed() method do?",
+    "a": "Plays the teleport sound and shakes the camera.",
+    "b": "Sets the HasSeed parameter in the animator to true.",
+    "c": "Destroys the teleport seed.",
+    "d": "Plays the plant sound and shakes the camera.",
+    "Answer": "b"
+  },
+  {
+    "class": "TeleportPlanter",
+    "Question": "What is the primary responsibility of the TeleportPlanter class in Unity?",
+    "a": "Managing teleportation points",
+    "b": "Handling character movement",
+    "c": "Controlling player attacks",
+    "d": "Calculating camera angles",
+    "Answer": "a"
+  },
+  {
+    "class": "TeleportPlanter",
+    "Question": "In TeleportPlanter.cs, what happens when the PlantNewSeed method is called?",
+    "a": "A new seed is generated and placed.",
+    "b": "The player's position is updated.",
+    "c": "The last seed is destroyed.",
+    "d": "The game progresses to the next level.",
+    "Answer": "a"
+  },
+  {
+    "class": "TeleportPlanter",
+    "Question": "What is the purpose of the SeedDestroyedByCollision method in the TeleportPlanter class?",
+    "a": "To create a new seed object.",
+    "b": "To destroy the last planted seed.",
+    "c": "To handle the player's movement.",
+    "d": "To manage the teleportation process.",
+    "Answer": "b"
+  },
+  {
+    "class": "TeleportSeed.cs",
+    "Question": "What is the purpose of the TeleportSeed class?",
+    "a": "To control the player's movement",
+    "b": "To manage the teleport seed's behavior",
+    "c": "To handle player combat actions",
+    "d": "To store references to key player components",
+    "Answer": "b"
+  },
+  {
+    "class": "TeleportSeed.cs",
+    "Question": "What does the TeleportSeed class do when it is created?",
+    "a": "Create a new seed",
+    "b": "Destroy the seed",
+    "c": "Initialize the seed",
+    "d": "Teleport the player",
+    "Answer": "c"
+  },
+  {
+    "class": "TeleportSeed.cs",
+    "Question": "What does the OnTriggerEnter method do in TeleportSeed.cs?",
+    "a": "It destroys the seed when something enters its trigger zone",
+    "b": "It teleports the player",
+    "c": "It returns a random destination",
+    "d": "It sets the player position",
+    "Answer": "a"
+  },
+  {
+    "class": "AnimatedInteractable.cs",
+    "Question": "What does the OnObjectWentOutOfFocus() method do in AnimatedInteractable.cs?",
+    "a": "Plays the animation.",
+    "b": "Checks if the object is one time animated.",
+    "c": "Invokes the onInteractAction.",
+    "d": "Disables the collider.",
+    "Answer": "a"
+  },
+  {
+    "class": "AnimatedInteractable.cs",
+    "Question": "What does AnimatedInteractable.cs do when the player interacts with the object?",
+    "a": "Plays the animation and invokes the onInteractAction",
+    "b": "Disables the collider",
+    "c": "Sets the object position",
+    "d": "Teleports the player",
+    "Answer": "a"
+  },
+  {
+    "class": "AnimatedInteractable.cs",
+    "Question": "What happens if the AnimatedInteractable is one time animated?",
+    "a": "The animation is played once then the object is disabled",
+    "b": "The animation is played twice",
+    "c": "The object is disabled",
+    "d": "The animation is played in reverse",
+    "Answer": "a"
+  },
+  {
+    "class": "CollectableInteractable.cs",
+    "Question": "What is the main purpose of the CollectableInteractable script?",
+    "a": "To control player movement",
+    "b": "To manage player behavior functionality",
+    "c": "To handle player combat actions",
+    "d": "To add functionality of collecting the object when the player interacts with it",
+    "Answer": "d"
+  },
+  {
+    "class": "CollectableInteractable.cs",
+    "Question": "What happens when the player stops focusing on the CollectableInteractable object?",
+    "a": "The object is destroyed",
+    "b": "The object's collider is disabled",
+    "c": "The object is scaled down",
+    "d": "Nothing happens",
+    "Answer": "d"
+  },
+  {
+    "class": "CollectableInteractable.cs",
+    "Question": "What happens when the player interacts with the CollectableInteractable object?",
+    "a": "The object is scaled down",
+    "b": "The object is destroyed",
+    "c": "The object's collider is disabled",
+    "d": "The object's position is changed",
+    "Answer": "b"
+  },
+  {
+    "class": "InteractableObject.cs",
+    "Question": "What is the responsibility of InteractableObject.cs?",
+    "a": "Handling player movement",
+    "b": "Managing player combat actions",
+    "c": "Controlling interactable objects",
+    "d": "Storing references to key player components",
+    "Answer": "c"
+  },
+  {
+    "class": "InteractableObject.cs",
+    "Question": "What happens when the ObjectWentInFocus() method is called?",
+    "a": "The hint is shown in the UI",
+    "b": "The player teleports",
+    "c": "The player's position is set",
+    "d": "The player's combat actions are managed",
+    "Answer": "a"
+  },
+  {
+    "class": "InteractableObject.cs",
+    "Question": "What is the purpose of the OnObjectWentOutOfFocus() method?",
+    "a": "To hide the hint from the UI",
+    "b": "To handle player movement",
+    "c": "To set the player's position",
+    "d": "To manage player combat actions",
+    "Answer": "a"
+  },
+  {
+    "class": "PlayerInteractableObjectsManager.cs",
+    "Question": "What does the PlayerInteractableObjectsManager script do?",
+    "a": "Manages player movement",
+    "b": "Controls player combat actions",
+    "c": "Detects whether the player is focusing on an interactable object or not",
+    "d": "Handles player inventory",
+    "Answer": "c"
+  },
+  {
+    "class": "PlayerInteractableObjectsManager.cs",
+    "Question": "What happens when the player is focusing on an interactable object?",
+    "a": "The player can interact with the object",
+    "b": "The object's ObjectWentInFocus method is called",
+    "c": "The object's Interact method is called",
+    "d": "Both b and c",
+    "Answer": "d"
+  },
+  {
+    "class": "PlayerInteractableObjectsManager.cs",
+    "Question": "What is the purpose of the distance variable in the PlayerInteractableObjectsManager script?",
+    "a": "To determine how far the player can interact with objects",
+    "b": "To determine how close the player must be to an object to focus on it",
+    "c": "To determine how far the player can move",
+    "d": "To determine how close the player must be to an object to interact with it",
+    "Answer": "b"
+  },
+  {
+    "class": "PowerSwitch.cs",
+    "Question": "What is the purpose of the PowerSwitch class?",
+    "a": "To animate player movements",
+    "b": "To manage player interacted power switches in the game",
+    "c": "To control player interaction with elevators",
+    "d": "To handle player combat actions",
+    "Answer": "b"
+  },
+  {
+    "class": "PowerSwitch.cs",
+    "Question": "What action does the LightsBackOn() method take?",
+    "a": "Disable switch visual indicator",
+    "b": "Animate switch to 'Turn On' animation",
+    "c": "Disable the collider of the switch",
+    "d": "Diseables switch interactor object",
+    "Answer": "c"
+  },
+  {
+    "class": "PowerSwitch.cs",
+    "Question": "What does the OnSwitchFlipped() method do when called?",
+    "a": "Activates the color green on the switch's light indicator",
+    "b": "Calls the PowerSwitchActivated() method",
+    "c": "Animates the switch to the 'Turn Off' animation",
+    "d": "Enables the switch's collider component",
+    "Answer": "b"
+  },
+  {
+    "class": "SimpleDoor.cs",
+    "Question": "What is the purpose of the IsLocked field in SimpleDoor.cs?",
+    "a": "Determines if the door is currently locked.",
+    "b": "Used for debugging the lock state of the door.",
+    "c": "Locks the door for the rest of the game.",
+    "d": "Controls the door's animation speed.",
+    "Answer": "a"
+  },
+  {
+    "class": "SimpleDoor.cs",
+    "Question": "What does the ForceOpen method do in SimpleDoor.cs?",
+    "a": "Forcibly opens the door, regardless of its current state.",
+    "b": "Forces the player to interact with the door.",
+    "c": "Forcibly closes the door, regardless of its current state.",
+    "d": "Forces the door to play its locked animation.",
+    "Answer": "a"
+  },
+  {
+    "class": "SimpleDoor.cs",
+    "Question": "What is the purpose of the private void Start() method in SimpleDoor.cs?",
+    "a": "Sets the door's initial state.",
+    "b": "Initializes the door's animation.",
+    "c": "Sets up the door's audio.",
+    "d": "All of the above.",
+    "Answer": "d"
+  },
+  {
+    "class": "GrabbableObjects.cs",
+    "Question": "What does the GrabbableObjects class inherit and why?",
+    "a": "InteractableObject.cs, to add grabbing, holding + unGrabbing the object when the player interacts with it",
+    "b": "CharacterController.cs, to control the movement of the held object",
+    "c": "UnityEvent.cs, to invoke an event when the player grabs the object.",
+    "d": "Rigidbody.cs, to control the object's velocity and angular velocity",
+    "Answer": "a"
+  },
+  {
+    "class": "GrabbableObjects.cs",
+    "Question": "What is the purpose of the `Update()` method in this script?",
+    "a": "To lerp the object to the target position",
+    "b": "To check if the player is still holding the object",
+    "c": "To update the object's velocity",
+    "d": "To update the object's position based on the player's movement",
+    "Answer": "a"
+  },
+  {
+    "class": "GrabbableObjects.cs",
+    "Question": "How does the GrabbableObjects class handle the grabbing and unGrabbing of objects?",
+    "a": "By using the `Input.GetButtonDown()` method to check for player input",
+    "b": "By setting the object's parent to the player's hand transform when grabbed and null when unGrabbed",
+    "c": "By using physics calculations to simulate the movement of the object",
+    "d": "By using the `Grab()` and `UnGrab()` methods to control the object's state",
+    "Answer": "d"
+  },
+  {
+    "class": "PlayerHoldObjectsManager.cs",
+    "Question": "In PlayerHoldObjectsManager.cs, what is the purpose of the 'OnGrabbableObjectInteracted' event?",
+    "a": "To check if a grabbable object is being grabbed",
+    "b": "To trigger the appropriate Grab or UnGrab method",
+    "c": "To update the target position for small and big objects",
+    "d": "To subscribe to events related to player interactions",
+    "Answer": "b"
+  },
+  {
+    "class": "PlayerHoldObjectsManager.cs",
+    "Question": "What happens when the player interacts with a grabbable object and how does PlayerHoldObjectsManager.cs handle it?",
+    "a": "It ignores the interaction and does nothing",
+    "b": "It calls the Grab or UnGrab method of the GrabbableObjects.cs script",
+    "c": "It updates the player's position based on the object's size",
+    "d": "It checks if the player has the necessary resources to grab the object",
+    "Answer": "b"
+  },
+  {
+    "class": "PlayerHoldObjectsManager.cs",
+    "Question": "When the PlayerHoldObjectsManager.cs script is disabled, what happens to the subscribed events?",
+    "a": "They are automatically unsubscribed",
+    "b": "They continue to be subscribed and receive events",
+    "c": "They are temporarily paused until the script is enabled again",
+    "d": "They are only unsubscribed if the player is not carrying an object",
+    "Answer": "a"
+  },
+  {
+    "class": "PowerCoreObject.cs",
+    "Question": "What is the purpose of the PowerCoreObject class?",
+    "a": "To add health points to the player",
+    "b": "To manage the insertion and ejection of the power core",
+    "c": "To collect coins in the scene",
+    "d": "To control the game camera",
+    "Answer": "b"
+  },
+  {
+    "class": "PowerCoreObject.cs",
+    "Question": "What happens when the OnEnteredPowerStation() method is called?",
+    "a": "The power core is ejected from the station",
+    "b": "The power core is fully inserted into the station",
+    "c": "The player grabs the power core",
+    "d": "The power core is destroyed",
+    "Answer": "b"
+  },
+  {
+    "class": "PowerCoreObject.cs",
+    "Question": "What is the coreInstallTarget field used for?",
+    "a": "To specify the target position for the power core to be installed",
+    "b": "To specify the target rotation for the power core to be installed",
+    "c": "To specify the target position for the power core to be ejected",
+    "d": "To specify the target rotation for the power core to be ejected",
+    "Answer": "a"
+  },
+  {
+    "class": "PowerCoreStation.cs",
+    "Question": "What is the purpose of the PowerCoreStation class?",
+    "a": "To control player movement",
+    "b": "To manage some player behavior functionality",
+    "c": "To handle player combat actions",
+    "d": "To implement the logic of a power station in the game",
+    "Answer": "d"
+  },
+  {
+    "class": "PowerCoreStation.cs",
+    "Question": "What happens when the power core enters the station's trigger zone?",
+    "a": "The station plays a sound.",
+    "b": "The station fully inserts the power core.",
+    "c": "The player can interact with the station.",
+    "d": "The station disables its collider.",
+    "Answer": "b"
+  },
+  {
+    "class": "PowerCoreStation.cs",
+    "Question": "When is the Interact() method of the PowerCoreStation class called?",
+    "a": "When the player focuses on the object.",
+    "b": "When the player presses the interact button.",
+    "c": "When the power core enters the station's trigger zone.",
+    "d": "When the player goes out of focus of the object.",
+    "Answer": "b"
+  },
+  {
+    "class": "LightMaterialDatabaseSO.cs",
+    "Question": "What does LightMaterialDatabaseSO.cs do?",
+    "a": "Creates a database of light materials",
+    "b": "Contains a list of all light materials",
+    "c": "Provides methods to get light material by LightColor enum and vice versa",
+    "d": "All of the above",
+    "Answer": "d"
+  },
+  {
+    "class": "LightMaterialDatabaseSO.cs",
+    "Question": "What are the two scriptable objects of this type in the project?",
+    "a": "LightGun lights and Simple lights",
+    "b": "LightGun lights and Off lights",
+    "c": "Simple lights and Off lights",
+    "d": "None of the above",
+    "Answer": "a"
+  },
+  {
+    "class": "LightMaterialDatabaseSO.cs",
+    "Question": "What does the GetAllLightGunLightsExceptOff() method return?",
+    "a": "All light materials except Off",
+    "b": "All light materials except Red",
+    "c": "All light materials except Blue",
+    "d": "All light materials except Green",
+    "Answer": "a"
+  },
+  {
+    "class": "Constants.cs",
+    "Question": "What layer does the FocusedHighlightedLayer constant in the Constants class refer to?",
+    "a": "Layer 5",
+    "b": "Layer 8",
+    "c": "Layer 3",
+    "d": "Layer 10",
+    "Answer": "a"
+  },
+  {
+    "class": "Constants.cs",
+    "Question": "What value is assigned to the LightGunLightEmissionAmount constant in the Constants class?",
+    "a": "20",
+    "b": "60",
+    "c": "10",
+    "d": "40",
+    "Answer": "d"
+  },
+  {
+    "class": "Constants.cs",
+    "Question": "What is the name of the key used to store the time taken to complete a level in PlayerPrefs?",
+    "a": "LevelTime(int level)",
+    "b": "LevelCompletionTime(int level)",
+    "c": "LevelDuration(int level)",
+    "d": "TimeUntilLevelCompletion(int level)",
+    "Answer": "a"
+  },
+  {
+    "class": "FootstepManager.cs",
+    "Question": "What is the purpose of the FootstepManager class?",
+    "a": "To control player movement",
+    "b": "To play footstep sounds based on player speed",
+    "c": "To handle player combat actions",
+    "d": "To store references to key player components",
+    "Answer": "b"
+  },
+  {
+    "class": "FootstepManager.cs",
+    "Question": "What variable is used for the footstep timer?",
+    "a": "speed",
+    "b": "crouchAudioDelay",
+    "c": "walkAudioDelay",
+    "d": "_footstepTime",
+    "Answer": "d"
+  },
+  {
+    "class": "FootstepManager.cs",
+    "Question": "The footstep timer is updated when?",
+    "a": "When the player is grounded",
+    "b": "When the player is moving",
+    "c": "When the player is running",
+    "d": "When the player is crouching",
+    "Answer": "b"
+  },
+  {
+    "class": "GameManager.cs",
+    "Question": "What is the main responsibility of the GameManager class?",
+    "a": "To handle player-related behaviors",
+    "b": "To manage scene transitions",
+    "c": "To hold references to reusable data for other systems",
+    "d": "To control the game's overall state",
+    "Answer": "c"
+  },
+  {
+    "class": "GameManager.cs",
+    "Question": "What are LightMaterialDatabaseSO and SimpleLightMaterials in the GameManager class?",
+    "a": "Serialized fields used for static methods",
+    "b": "Custom editor scripts to configure materials",
+    "c": " Scriptable objects containing materials for specific purposes",
+    "d": "MonoBehaviour scripts handling material assignments",
+    "Answer": "c"
+  },
+  {
+    "class": "GameManager.cs",
+    "Question": "What happens when the game is closed in the GameManager class?",
+    "a": "All materials are reset to their default settings",
+    "b": "The game's state is saved and persistent data is cleared",
+    "c": "The Unity Editor is exited and the game is terminated",
+    "d": "LightGun lights materials are reset to their default emission intensity",
+    "Answer": "d"
+  },
+  {
+    "class": "GameStarter.cs",
+    "Question": "What does the GameStarter class do?",
+    "a": "Manages player movement",
+    "b": "Sets up the main menu and listens for game start UI events",
+    "c": "Handles player combat actions",
+    "d": "Stores data of all levels",
+    "Answer": "b"
+  },
+  {
+    "class": "GameStarter.cs",
+    "Question": "When is the StartGame method called?",
+    "a": "When the player enters a new level",
+    "b": "When the player dies",
+    "c": "When the player presses the start game button in the main menu",
+    "d": "When the player reaches a checkpoint",
+    "Answer": "c"
+  },
+  {
+    "class": "GameStarter.cs",
+    "Question": "What happens when the SetMenuCameraPositionAndRotation method is called?",
+    "a": "The main menu camera is activated",
+    "b": "The player's position is set to the main menu camera's position",
+    "c": "The game is paused",
+    "d": "The main menu camera's position and rotation are updated",
+    "Answer": "d"
+  },
+  {
+    "class": "GlobalInGameData.cs",
+    "Question": "What is the purpose of the GlobalInGameData class?",
+    "a": "Controls player movement",
+    "b": "Stores global data used throughout the game",
+    "c": "Manages scene transitions",
+    "d": "Handles inventory management",
+    "Answer": "b"
+  },
+  {
+    "class": "GlobalInGameData.cs",
+    "Question": "What does the CurrentLevel field represent in GlobalInGameData.cs?",
+    "a": "The player's current health",
+    "b": "The number of levels completed",
+    "c": "The current level the player is in",
+    "d": "The highest level reached",
+    "Answer": "c"
+  },
+  {
+    "class": "GlobalInGameData.cs",
+    "Question": "What is the purpose of the PlayerHasControl field in GlobalInGameData.cs?",
+    "a": "Determines if the player can move",
+    "b": "Toggles player invincibility",
+    "c": "Controls player animations",
+    "d": "Manages player interactions with objects",
+    "Answer": "a"
+  },
+  {
+    "class": "MusicSoundManager",
+    "Question": "What does the PlaySound() method in MusicSoundManager do?",
+    "a": "Plays an AudioClip",
+    "b": "Stops an AudioClip",
+    "c": "Pauses an AudioClip",
+    "d": "Fades an AudioClip",
+    "Answer": "a"
+  },
+  {
+    "class": "MusicSoundManager",
+    "Question": "What is the purpose of the PlaySoundWithDelay() method in MusicSoundManager?",
+    "a": "Plays an AudioClip with a delay",
+    "b": "Plays an AudioClip in a loop",
+    "c": "Plays an AudioClip at a random pitch",
+    "d": "Plays an AudioClip at a random volume",
+    "Answer": "a"
+  },
+  {
+    "class": "MusicSoundManager",
+    "Question": "Which method is used to play ambient sound in MusicSoundManager?",
+    "a": "PlaySound()",
+    "b": "PlayMusic()",
+    "c": "PlayAmbient()",
+    "d": "PlayFootstep()",
+    "Answer": "c"
+  },
+  {
+    "class": "PreLoader.cs",
+    "Question": "What is the purpose of the PreLoader class?",
+    "a": "To specify the resolution for the game",
+    "b": "To load specific assets before any scene is loaded",
+    "c": "To disable the loading of certain scenes",
+    "d": "To create an instance of the Systems object",
+    "Answer": "d"
+  },
+  {
+    "class": "PreLoader.cs",
+    "Question": "How is the Systems object instantiated?",
+    "a": "By calling the DontDestroyOnLoad() method",
+    "b": "By using the Resources.Load() method",
+    "c": "By setting the RuntimeInitializeLoadType attribute",
+    "d": "By calling the Instantiate() method",
+    "Answer": "d"
+  },
+  {
+    "class": "PreLoader.cs",
+    "Question": "What happens after the Systems object is instantiated?",
+    "a": "The game resolution is set",
+    "b": "The DontDestroyOnLoad() method is called",
+    "c": "The Resources.Load() method is used",
+    "d": "The RuntimeInitializeLoadType attribute is set",
+    "Answer": "a"
+  },
+  {
+    "class": "SingletonMonoBehaviour.cs",
+    "Question": "What does the SingletonMonoBehaviour.cs class provide?",
+    "a": "A custom implementation of the singleton pattern",
+    "b": "A way to manage multiple instances of the same class",
+    "c": "A way to store and access global variables",
+    "d": "A way to create abstract classes",
+    "Answer": "a"
+  },
+  {
+    "class": "SingletonMonoBehaviour.cs",
+    "Question": "How is the Singleton instance set in SingletonMonoBehaviour.cs?",
+    "a": "Through the Awake method",
+    "b": "Through the Start method",
+    "c": "Through the Update method",
+    "d": "Through the FixedUpdate method",
+    "Answer": "a"
+  },
+  {
+    "class": "SingletonMonoBehaviour.cs",
+    "Question": "What happens if there is already an instance of a Singleton class when trying to create another one?",
+    "a": "The new instance is destroyed",
+    "b": "The old instance is destroyed",
+    "c": "Both instances are destroyed",
+    "d": "An error is logged in the console",
+    "Answer": "d"
+  },
+  {
+    "class": "Utils.cs",
+    "Question": "What does the Normalize method do in Utils.cs?",
+    "a": "Inverts the color components",
+    "b": "Converts a color to grayscale",
+    "c": "Adjusts a color to make its brightest component equal to 1",
+    "d": "Scales a color by a random factor",
+    "Answer": "c"
+  },
+  {
+    "class": "FlashLightUiManager.cs",
+    "Question": "In FlashLightUiManager.cs what is the purpose of the FlashLightUiManager class?",
+    "a": "To control player movement",
+    "b": "To manage the flash light UI",
+    "c": "To handle player combat actions",
+    "d": "To store references to key player components",
+    "Answer": "b"
+  },
+  {
+    "class": "FlashLightUiManager.cs",
+    "Question": "What does the Update() method do in FlashLightUiManager.cs?",
+    "a": "Updates the UI according to the battery level",
+    "b": "Teleports the player",
+    "c": "Returns a random destination",
+    "d": "Sets the player position",
+    "Answer": "a"
+  },
+  {
+    "class": "FlashLightUiManager.cs",
+    "Question": "Which component is updated to show the battery level?",
+    "a": "Text",
+    "b": "Slider",
+    "c": "Image",
+    "d": "Button",
+    "Answer": "c"
+  },
+  {
+    "class": "FullScreenEffectsManager.cs",
+    "Question": "What are the types of the fullscreen effects managed by FullScreenEffectsManager?",
+    "a": "Low on health and teleport",
+    "b": "Low on health and slow motion",
+    "c": "Teleport and slow motion",
+    "d": "Low on health and poisoning",
+    "Answer": "a"
+  },
+  {
+    "class": "FullScreenEffectsManager.cs",
+    "Question": "What does FullScreenEffectsManager.cs do when HealthLowHealthEffect() is called?",
+    "a": "Hides the low-health effect",
+    "b": "Animates intensity of the low-health effect",
+    "c": "Resets the low-health effect",
+    "d": "Shows the teleport effect",
+    "Answer": "b"
+  },
+  {
+    "class": "FullScreenEffectsManager.cs",
+    "Question": "In FullScreenEffectsManager.cs, what is the name of the method called when a player teleports?",
+    "a": "Teleportation()",
+    "b": "Teleport()",
+    "c": "PlayerTeleport()",
+    "d": "TeleportPlayer()",
+    "Answer": "b"
+  },
+  {
+    "class": "GamePlayCanvasManager.cs",
+    "Question": "What is the role of GamePlayCanvasManager in the script?",
+    "a": "To manage the activation and deactivation of gameplay canvas elements",
+    "b": "To handle player movement",
+    "c": "To store references to key player components",
+    "d": "To control the player's combat actions",
+    "Answer": "a"
+  },
+  {
+    "class": "GamePlayCanvasManager.cs",
+    "Question": "What method is used to deactivate the gameplay UI in GamePlayCanvasManager?",
+    "a": "EnableGameplayUi",
+    "b": "DisableGameplayUi",
+    "c": "SetGameplayUiActive",
+    "d": "ToggleGameplayUi",
+    "Answer": "b"
+  },
+  {
+    "class": "GamePlayCanvasManager.cs",
+    "Question": "What is the purpose of the SingletonMonoBehaviour<GamePlayCanvasManager> base class?",
+    "a": "To ensure there is only one instance of GamePlayCanvasManager active at a time",
+    "b": "To facilitate communication between different GamePlayCanvasManager instances",
+    "c": "To provide a shared interface for accessing GamePlayCanvasManager functionality",
+    "d": "To allow GamePlayCanvasManager to interact with other components in the scene",
+    "Answer": "a"
+  },
+  {
+    "class": "UIBeastManager.cs",
+    "Question": "What does the UIBeastManager class do in Unity?",
+    "a": "It controls lighting",
+    "b": "It manages UI elements for the player's beast",
+    "c": "It handles player combat",
+    "d": "It manages the camera view",
+    "Answer": "b"
+  },
+  {
+    "class": "UIBeastManager.cs",
+    "Question": "What is the purpose of the OnEnable() method in UIBeastManager.cs?",
+    "a": "To subscribe to events",
+    "b": "To start the game",
+    "c": "To load the next level",
+    "d": "To stop the game",
+    "Answer": "a"
+  },
+  {
+    "class": "UIBeastManager.cs",
+    "Question": "What is the OnDisable() method in UIBeastManager.cs used for?",
+    "a": "To restart the game",
+    "b": "To unsubscribe from events",
+    "c": "To save the game",
+    "d": "To pause the game",
+    "Answer": "b"
+  },
+  {
+    "class": "UICurrentObjectivesManager.cs",
+    "Question": "What does the UICurrentObjectivesManager class manage on the UI?",
+    "a": "Player movement",
+    "b": "Enemy behaviour",
+    "c": "Story progression",
+    "d": "Current objectives messages",
+    "Answer": "d"
+  },
+  {
+    "class": "UICurrentObjectivesManager.cs",
+    "Question": "What is the responsibility of the CurrentObjectiveUpdate function in UICurrentObjectivesManager.cs?",
+    "a": "Updating the current objective UI element",
+    "b": "Hiding the UI element",
+    "c": "Starting the game",
+    "d": "Unsubscribing from events",
+    "Answer": "a"
+  },
+  {
+    "class": "UICurrentObjectivesManager.cs",
+    "Question": "Which event does the UICurrentObjectivesManager subscribe to in order to update the current objective UI?",
+    "a": "UiEventHub.OnGameStart",
+    "b": "UiEventHub.OnEnemyKilled",
+    "c": "UiEventHub.OnPlayerDeath",
+    "d": "UiEventHub.OnCurrentObjectiveUpdate",
+    "Answer": "d"
+  },
+  {
+    "class": "UiHintManager.cs",
+    "Question": "What does UiHintManager do?",
+    "a": "Displays hints to the player.",
+    "b": "Manages player inventory.",
+    "c": "Controls player movement.",
+    "d": "Calculates the player's score.",
+    "Answer": "a"
+  },
+  {
+    "class": "UiHintManager.cs",
+    "Question": "What happens when OnMainHint is called?",
+    "a": "The main hint text is updated.",
+    "b": "The player's score is increased.",
+    "c": "The game is paused.",
+    "d": "The player's health is restored.",
+    "Answer": "a"
+  },
+  {
+    "class": "UiHintManager.cs",
+    "Question": "What is the purpose of the mainHintText field?",
+    "a": "To store the player's name.",
+    "b": "To store the current level.",
+    "c": "To display hints to the player.",
+    "d": "To store the game's high score.",
+    "Answer": "c"
+  }
+]

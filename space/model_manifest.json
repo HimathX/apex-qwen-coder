@@ -1,0 +1,31 @@
+{
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "base_revision": "c03e6d358207e414f1eca0bb1891e29f1db0e242",
+  "run_id": "mcq-augmentation-20261117T051401617175Z",
+  "initialization": "Original MCQ adapter followed by one augmented epoch",
+  "sha256": {
+    "adapter_model.safetensors": "fb723545c82745a0a34f3ce1bf2103cac563fc97d706ddaa4134f52ba5499c5a",
+    "adapter_config.json": "c4cb7c97d23a5d4fe3a168a07e7cbe37a289bf12f9fd24ca18af2c2c5dec2f6a"
+  },
+  "test": {
+    "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "questions": 269,
+    "correct": 222,
+    "accuracy": 0.8252788104089219,
+    "invalid_answers": 0,
+    "token_budget_reached": 0,
+    "elapsed_seconds": 135.3174737089994
+  },
+  "validation": {
+    "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "questions": 192,
+    "correct": 184,
+    "accuracy": 0.9583333333333334,
+    "invalid_answers": 0,
+    "token_budget_reached": 0,
+    "elapsed_seconds": 152.19950425699972
+  },
+  "source_metadata_sha256": "16fc83d8167f4b4b0206a236f73b31992ecbc58834b5bd872bb826b016161f93",
+  "qa_mode": "Experimental; no measured free-form QA accuracy",
+  "source_starting_adapter_sha256": "11ccee4e737ddadc11258d5e3ac6820b82804036a7ca3b3f05ae45c4c44f9f95"
+}

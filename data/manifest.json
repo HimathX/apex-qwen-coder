@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "format": "JSON arrays, UTF-8; original CSV text fields preserved",
+  "source_row": "Zero-based row index in original TrainData.csv, not CSV line number",
+  "variant_id": {
+    "0": "Original MCQ with approved corrections",
+    "1": "First new variant",
+    "2": "Second new variant"
+  },
+  "source_count": 1717,
+  "training_mcqs": 5151,
+  "validation_questions": 192,
+  "test_questions": 269,
+  "historical_training_sources": 1718,
+  "excluded_training_source_rows": [
+    1817
+  ],
+  "original_qa_all_contains_heldout_records": true,
+  "use_for_qa_training": "original_qa/train.json only; never all.json",
+  "original_mcq_policy": "set_1.json is active repaired variant 0. Historical 1718-row CSV remains in the source workspace.",
+  "new_variant_acceptance_policy": {
+    "mode": "as_generated",
+    "user_authorized": true,
+    "authorization": "User instruction: don't do reviews accpe them as it is",
+    "semantic_review_required": false,
+    "applies_to": "All existing and future generated variants in this augmentation run",
+    "content_action": "Accept generated content as supplied; do not perform semantic audits, quality reviews or stylistic repairs",
+    "technical_checks_retained": [
+      "required MCQ fields and valid answer labels",
+      "unique source/variant IDs and complete 1717-source cohort",
+      "worker and source mapping",
+      "held-out split isolation",
+      "four balanced rotations",
+      "4096-token presentation limit",
+      "input and starting-adapter hashes"
+    ],
+    "provenance": "Accepted at user direction as generated; not a claim that all variants passed semantic review",
+    "historical_primary_reviews": "Preserved as history, no longer required for acceptance"
+  },
+  "original_corrections_already_applied": true,
+  "sources": {
+    "original_qa": {
+      "path": "TrainData.csv",
+      "sha256": "3150859588f37e4ec6b305ca8dce40726fed07b3a684ffbaaa70aec7c7dd61d3"
+    },
+    "historical_original_mcq_train": {
+      "path": "data/mcq/generated-mcqs-final/train.csv",
+      "sha256": "c2f759271d8a7d4f29105bfae4b523c31b73101a6042be1db5b5c3ddebc8a58f"
+    },
+    "augmented_train": {
+      "path": "data/mcq/augmented-final/train.csv",
+      "sha256": "8d07ab7847bdc1e4f85f363122813a7d1a91d4ec850776bf552119bb80aacb20"
+    },
+    "validation": {
+      "path": "data/mcq/generated-mcqs-final/validation.csv",
+      "sha256": "c7c028971d4ba185113eefafbb74260db4e5484542c04fec96334e1b18c77e20"
+    },
+    "test": {
+      "path": "TestData.csv",
+      "sha256": "5e10ec19d61624ee3554814337cf961fe499f4a666881c866c172fa1e51454a2"
+    },
+    "augmentation_manifest": {
+      "path": "data/mcq/augmented-final/augmentation_manifest.json",
+      "sha256": "fdfc5970b0ebf470c49a1b66dab91a755bb115f1766eb1f5691bb4a18109b8c3"
+    }
+  },
+  "exports": {
+    "original_qa/all.json": {
+      "records": 1910,
+      "sha256": "96c44ec31ef02024f03b4964d637be7fc8f5b97d692cb33c56096216bd4b9d95"
+    },
+    "original_qa/train.json": {
+      "records": 1717,
+      "sha256": "6cb3502b6b20be7680db28899c256cb04d0893fb04458688a2a31211675d9a6d"
+    },
+    "mcq/set_1.json": {
+      "records": 1717,
+      "sha256": "ffd30043da6d183778bf448f55d60ef01a1b7ab856cb598b23dc9b3fb3df38f5"
+    },
+    "mcq/variants.json": {
+      "records": 3434,
+      "sha256": "28aea476957bc8483bb6d217b3a9a943f113b6f16dcb3a12247e70baa88acdc5"
+    },
+    "evaluation/validation.json": {
+      "records": 192,
+      "sha256": "24603606ddd69bdbe4f9686892833ebe63e2a404b0630721ced26c5cdc5d2297"
+    },
+    "evaluation/test.json": {
+      "records": 269,
+      "sha256": "13b2b38ca66f29ed216abdf2980e15486f53c6da0ea869509f11dd43d0590a0f"
+    }
+  },
+  "training_presentation_mode": "single_random",
+  "training_presentation_count": 5151,
+  "seed": 42,
+  "semantic_review": "No new semantic review; exports preserve accepted data as supplied"
+}
